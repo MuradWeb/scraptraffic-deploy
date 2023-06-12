@@ -1,0 +1,129 @@
+.modal {
+  width: 100%;
+  max-width: 836px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: none
+}
+.modal.fancybox__content {
+  background-color: transparent
+}
+.modal .f-button:not(.f-button_custom) {
+  display: none!important
+}
+.modal .f-button.f-button_custom {
+  background: 0 0!important;
+  top: 20px;
+  right: 20px
+}
+.modal .f-button.f-button_custom svg {
+  width: 20px;
+  height: 20px
+}
+.modal_telegram .modal__container {
+  max-width: 836px;
+  margin: 0 auto
+}
+.modal__container {
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #000;
+  position: relative
+}
+.modal__wrap {
+  display: flex;
+  align-items: center
+}
+.modal__img {
+  width: 100%;
+  max-width: 248px;
+  margin-right: 60px
+}
+.modal__img img {
+  height: auto
+}
+.modal__top-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: .02em;
+  color: #30b4ff
+}
+.modal__text {
+  font-size: 14px;
+  line-height: 130%;
+  margin: 16px 0
+}
+.modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center
+}
+.modal__btn svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px
+}
+.modal__bottom {
+  margin-top: 40px
+}
+.modal__bottom-title {
+  font-size: 14px;
+  line-height: 130%;
+  margin-bottom: 16px
+}
+.modal__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px
+}
+.modal__link {
+  margin: 5px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 12px
+}
+@media (max-width:1024px) {
+  .modal__container {
+    padding: 40px
+  }
+}
+@media (max-width:768px) {
+  .modal__container {
+    padding: 20px
+  }
+  .modal__wrap {
+    flex-direction: column
+  }
+  .modal__img {
+    margin: 0 0 40px
+  }
+  .modal__bottom {
+    margin-top: 30px
+  }
+}
+@media (max-width:540px) {
+  .modal__img {
+    max-width: 200px;
+    height: 180px;
+    transform: translateY(-100px)
+  }
+  .modal__top-title {
+    font-size: 20px;
+    text-align: center
+  }
+  .modal__text {
+    text-align: center
+  }
+  .modal__btn {
+    display: flex
+  }
+  .modal__bottom-title {
+    text-align: center
+  }
+  .modal__links {
+    align-items: center;
+    justify-content: center
+  }
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item" aria-current="page">
+                    Пользователям
+                </li>
+            </ul>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Материалы на продажу со склада</h1>
+                <p class="section__text">
+                    Данный раздел предназначен для покупателей, профессиональных трейдеров и представителей заводов переработчиков, прямых потребителей сырья в России, СНГ и на ближнем зарубежье.<br><br>
+                    Ниже представлены подготовительные партии к контрактам на поставку.
+                </p>
+
+                <div class="form-filter">
+                    <div class="form-filter__wrap">
+                        <div class="form-filter__head js-form-filter-head">
+                            <div class="form-filter__title">
+                                Фильтр
+                                <span class="form-filter__badge">1</span>
+                            </div>
+
+                            <div class="form-filter__arrow">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#select-arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button class="form-filter__reset js-form-filter-reset">Очистить</button>
+
+                        <form action="#" class="form-filter__form js-form-filter">
+                            <label class="form-filter__label">
+                                <select name="country" data-placeholder="Страна" class="select js-select2 form-filter__select">
+                                    <option></option>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </label>
+
+                            <label class="form-filter__label">
+                                <select name="city" data-placeholder="Страна" class="select js-select2 form-filter__select">
+                                    <option></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </label>
+
+                            <label class="form-filter__label">
+                                <select name="materials[]" class="select js-select2 form-filter__select" data-placeholder="Материал" multiple="multiple">
+                                    <option value="One" selected>One</option>
+                                    <option value="Two" selected>Two</option>
+                                    <option value="Three" selected>Three</option>
+                                    <option value="Four" selected>Four</option>
+                                    <option value="Five" selected>Five</option>
+                                    <option value="Six">Six</option>
+                                </select>
+                            </label>
+
+                            <label class="form-filter__label">
+                                <select name="form" data-placeholder="Форма" class="select js-select2 form-filter__select">
+                                    <option></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </label>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="materials js-materials">
+                    <div class="materials__grid js-ajax-content">
+                        <div class="materials__card">
+                            <div class="materials__card-head">
+                                <div class="materials__card-title">
+                                    <h2 class="materials__card-name">Мышьяк металлический</h2>
+                                    <div class="materials__card-code">ОСЧ 17-4</div>
+                                </div>
+
+                                <div class="materials__card-links">
+                                    <a href="#" target="_blank" data-tooltip="Внешняя ссылка" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="materials__card-list js-materials-list">
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-pin"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Местоположение:</span>
+                                    <span class="materials__list-key">Санкт-Петербург</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Наличие:</span>
+                                    <span class="materials__list-key">На складе 15 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Условия:</span>
+                                    <span class="materials__list-key">Продажа от 1 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-cross"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Форма:</span>
+                                    <span class="materials__list-key">Кристаллы</span>
+                                </li>
+
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-box"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Упаковка:</span>
+                                    <span class="materials__list-key">Ампулы стекло</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Документы:</span>
+                                    <span class="materials__list-key">Есть</span>
+                                </li>
+                            </ul>
+
+                            <div class="materials__card-foot">
+                                <div class="materials__cost">25 000 руб/кг</div>
+                                <button class="btn materials__btn">Запрос на поставку</button>
+                            </div>
+                        </div>
+                        <div class="materials__card">
+                            <div class="materials__card-head">
+                                <div class="materials__card-title">
+                                    <h2 class="materials__card-name">Мышьяк металлический</h2>
+                                    <div class="materials__card-code">ОСЧ 17-4</div>
+                                </div>
+
+                                <div class="materials__card-links">
+                                    <a href="#" target="_blank" data-tooltip="Внешняя ссылка" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="materials__card-list js-materials-list">
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-pin"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Местоположение:</span>
+                                    <span class="materials__list-key">Санкт-Петербург</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Наличие:</span>
+                                    <span class="materials__list-key">На складе 15 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Условия:</span>
+                                    <span class="materials__list-key">Продажа от 1 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-cross"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Форма:</span>
+                                    <span class="materials__list-key">Кристаллы</span>
+                                </li>
+
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-box"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Упаковка:</span>
+                                    <span class="materials__list-key">Ампулы стекло</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Документы:</span>
+                                    <span class="materials__list-key">Есть</span>
+                                </li>
+
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Документы:</span>
+                                    <span class="materials__list-key">Есть</span>
+                                </li>
+                            </ul>
+
+                            <div class="materials__card-foot">
+                                <div class="materials__cost">25 000 руб/кг</div>
+                                <button class="btn materials__btn">Запрос на поставку</button>
+                            </div>
+                        </div>
+
+                        <div class="materials__card">
+                            <div class="materials__card-head">
+                                <div class="materials__card-title">
+                                    <h2 class="materials__card-name">Мышьяк металлический</h2>
+                                    <div class="materials__card-code">ОСЧ 17-4</div>
+                                </div>
+
+                                <div class="materials__card-links">
+                                    <a href="#" target="_blank" data-tooltip="Внешняя ссылка" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="materials__card-link">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="materials__card-list js-materials-list">
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-pin"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Местоположение:</span>
+                                    <span class="materials__list-key">Санкт-Петербург</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Наличие:</span>
+                                    <span class="materials__list-key">На складе 15 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Условия:</span>
+                                    <span class="materials__list-key">Продажа от 1 кг</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-cross"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Форма:</span>
+                                    <span class="materials__list-key">Кристаллы</span>
+                                </li>
+
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-box"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Упаковка:</span>
+                                    <span class="materials__list-key">Ампулы стекло</span>
+                                </li>
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Документы:</span>
+                                    <span class="materials__list-key">Есть</span>
+                                </li>
+
+                                <li class="materials__list-item">
+                                    <svg class="materials__list-icon" width="16" height="16">
+                                        <use xlink:href="./img/sprites/sprite.svg#icon-doc"></use>
+                                    </svg>
+                                    <span class="materials__list-val">Документы:</span>
+                                    <span class="materials__list-key">Есть</span>
+                                </li>
+                            </ul>
+
+                            <div class="materials__card-foot">
+                                <div class="materials__cost">25 000 руб/кг</div>
+                                <button class="btn materials__btn">Запрос на поставку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="intro-block">
+            <div class="container">
+                <div class="intro-block__wrap">
+                    <div class="intro-block__slider js-intro-block-slider">
+                        <div class="intro-block__img">
+                            <picture>
+                                <img src="./img/content/intro/pic-1.png" alt="" width="1320" height="607">
+                            </picture>
+                        </div>
+                        <div class="intro-block__img">
+                            <picture>
+                                <img src="./img/content/intro/pic-2.png" alt="" width="1320" height="607">
+                            </picture>
+                        </div>
+                        <div class="intro-block__img">
+                            <picture>
+                                <img src="./img/content/intro/pic-3.png" alt="" width="1320" height="607">
+                            </picture>
+                        </div>
+                        <div class="intro-block__img">
+                            <picture>
+                                <img src="./img/content/intro/pic-4.png" alt="" width="1320" height="607">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="intro-block__content">
+                        <h1 class="intro-block__title">
+                            <span>Сдайте металлолом и вторсырьё</span> в любом городе России и СНГ
+                        </h1>
+
+                        <div class="intro-block__row">
+                            <a href="#material" class="intro-block__item js-intro-block-link" data-slide="0">
+                                <span class="intro-block__item-more">Подробнее
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="intro-block__item-text">Материалы</span>
+                            </a>
+                            <a href="#cities" class="intro-block__item js-intro-block-link" data-slide="1">
+                                <span class="intro-block__item-more">Подробнее
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="intro-block__item-text">Города</span>
+                            </a>
+                            <a href="#analytics" class="intro-block__item js-intro-block-link" data-slide="2">
+                                <span class="intro-block__item-more">Подробнее
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="intro-block__item-text">Аналитика</span>
+                            </a>
+                            <a href="#service" class="intro-block__item js-intro-block-link" data-slide="3">
+                                <span class="intro-block__item-more">Подробнее
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="intro-block__item-text">Смежные услуги</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buyer">
+            <div class="container">
+                <h2 class="buyer__main-title">Найдите покупателя или продавца</h2>
+
+                <div class="buyer__row">
+                    <div class="buyer__item">
+                        <div class="buyer__img">
+                            <picture>
+                                <img src="./img/content/buyer/img_01.png" alt="" loading="lazy" width="648" height="448">
+                            </picture>
+                        </div>
+                        <div class="buyer__title">Более 500 <br> пунктов приема</div>
+                        <p class="buyer__text">
+                            Наша обширная сеть пунктов приема гарантирует быстрый и надежный прием металлолома. Найдите ближайший пункт приема прямо сейчас!
+                        </p>
+                        <a href="#" class="buyer__btn btn btn_empty">Подробнее</a>
+                    </div>
+                    <div class="buyer__item">
+                        <div class="buyer__img">
+                            <picture>
+                                <img src="./img/content/buyer/img_02.png" alt="" loading="lazy" width="488" height="488">
+                            </picture>
+                        </div>
+
+                        <a href="#" class="buyer__link">
+                            <span>Подробнее</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </a>
+
+                        <div class="buyer__img buyer__img_mob">
+                            <picture>
+                                <img src="./img/content/buyer/img_mob.png" alt="" loading="lazy" width="" height="">
+                            </picture>
+                        </div>
+                        <div class="buyer__title">Частные <br> объявления</div>
+                        <p class="buyer__text">
+                            Найдите лучшие предложения на вторсырье <br> и металлолом: продажа и покупка <br> без лишних хлопот!
+                        </p>
+                    </div>
+                    <div class="buyer__item">
+                        <button class="buyer__link js-fancy" data-src="#telegram-modal">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#menu_vertical"></use>
+                            </svg>
+                        </button>
+                        <div class="buyer__title">Подписывайтесь на наши Telegram-каналы</div>
+                        <button data-src="#telegram-modal" class="buyer__title buyer__title_mob js-fancy">Telegram</button>
+                    </div>
+                    <div class="buyer__item">
+                        <a href="#" class="buyer__link">
+                            <span>Перейти</span>
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                            </svg>
+                        </a>
+
+                        <div class="buyer__title">Присоединяйтесь к нашему YouTube-каналу</div>
+                        <a href="#" target="_blank" class="buyer__title buyer__title_mob">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-table" id="material">
+            <div class="container">
+                <div class="content-table__head">
+                    <h2 class="content-table__title">Цены на категории лома</h2>
+
+                    <a href="#" class="content-table__head-link">
+                        <span>Перейти</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="content-table__container">
+                    <div class="content-table__tab js-content-table-tab">
+                        <button data-type="metal" class="content-table__tab-link content-table__tab-link_active btn">Металлы, стали и сплавы</button>
+                        <button data-type="semimetals" class="content-table__tab-link btn">Полуметаллы, неметалл и их соединения</button>
+                        <button data-type="catalysts" class="content-table__tab-link btn">Катализаторы</button>
+                        <button data-type="radio-components" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="batteries" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <a href="#" class="content-table__tab-link btn">...</a>
+                    </div>
+
+                    <div class="content-table__block js-content-table-block">
+                        <ul class="content-table__list content-table__list_active" data-type="metal">
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Черный металл</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Сурьма</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Сера</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Медь</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Фосфор</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Нержавеющие стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Быстрорежущие стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Жаропрочные сплавы</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Прецизионные сплавы</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Легированные стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Цинк</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Латунь</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Бронза</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гафний</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Галлий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гольмий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Диспрозий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Европий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Золото</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link content-table__link_last">
+                                    <span class="content-table__text">...</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <a href="#" class="content-table__btn btn btn_empty">Подробнее</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation__row">
+                    <div class="consultation__content">
+                        <div class="consultation__title">Получите <br> бесплатную консультацию</div>
+                        <p class="consultation__text">Свяжитесь с нами по телефону <a href=""><strong>8 (981) 740-79-23</strong></a> или оставьте заявку, <br> мы свяжемся с вами в ближайшее время</p>
+                        <button class="btn btn_empty consultation__btn">Оставить заявку</button>
+                    </div>
+                    <div class="consultation__img">
+                        <picture>
+                            <source media="(max-width: 991px)" srcset="./img/content/consultation/img_mob.png" type="image/png">
+                            <img src="./img/content/consultation/img.png" alt="" loading="lazy" width="533" height="348">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="content-table" id="cities">
+            <div class="container">
+                <div class="content-table__head">
+                    <h2 class="content-table__title">Выберите город, где хотите сдать металлолом и вторсырье</h2>
+
+                    <a href="#" class="content-table__head-link">
+                        <span>Перейти</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="content-table__container">
+                    <ul class="content-table__list content-table__list_second">
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Москва</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Анапа</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Архангельск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Астрахань</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Барнаул</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Бишкек (KG)</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Брянск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Великий Новгород</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Волгоград</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Воронеж</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Владивосток</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Анапа</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Архангельск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Астрахань</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Барнаул</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Бишкек (KG)</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Брянск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Великий Новгород</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Волгоград</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Воронеж</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Ижевск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Анапа</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Архангельск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Астрахань</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Барнаул</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Бишкек (KG)</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Брянск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Великий Новгород</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Волгоград</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Воронеж</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Магнитогорск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Анапа</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Архангельск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Астрахань</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Барнаул</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Бишкек (KG)</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Брянск</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Великий Новгород</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Волгоград</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link content-table__link_last">
+                                <span class="content-table__text">...</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="content-table__btn btn btn_empty">Подробнее</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="tools">
+            <div class="container">
+                <h2 class="tools__main-title">Инструменты</h2>
+                <div class="tools__grid">
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Рассчитать
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/1.png" alt="" loading="lazy" width="312" width="180">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Калькулятор для расчёта плотности</span>
+                    </a>
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Рассчитать
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/2.png" alt="" loading="lazy" width="312" width="180">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Калькулятор выгодности сделки</span>
+                    </a>
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Узнать стоимость
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/3.png" alt="" loading="lazy" width="312" width="384">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Стоимость катализаторов</span>
+                        <span class="tools__item-text">
+                            Узнайте текущую стоимость катализаторов, необходимых для различных промышленных процессов
+                        </span>
+                    </a>
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Подробнее
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/4.png" alt="" loading="lazy" width="312" width="180">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Справочник содержания драгметаллов</span>
+                    </a>
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Подробнее
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/5.png" alt="" loading="lazy" width="312" width="180">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Марочник <br> сплавов</span>
+                    </a>
+                    <a href="#" class="tools__item">
+                        <span class="tools__item-btn">Подробнее
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                            </svg>
+                        </span>
+                        <span class="tools__item-img">
+                            <picture>
+                                <img src="./img/content/tools/6.png" alt="" loading="lazy" width="648" width="180">
+                            </picture>
+                        </span>
+                        <span class="tools__item-title">Определение сплавов по составу</span>
+                        <span class="tools__item-text">
+                            Определите марку стали или сплава по химическому составу
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-block">
+            <div class="container">
+                <div class="news-block__head">
+                    <h2 class="news-block__title">Блог и новости</h2>
+
+                    <a href="#" class="news-block__head-link">
+                        <span>Перейти</span>
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="news-block__slider js-news-block-slider">
+                    <div class="news-block__item">
+                        <div class="news-block__img">
+                            <picture>
+                                <img src="./img/content/news-block/1.jpg" alt="" loading="lazy" width="312" height="180">
+                            </picture>
+                        </div>
+                        <div class="news-block__body">
+                            <div class="news-block__timer">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
+                                </svg>
+                                <span>2-4 минуты на чтение</span>
+                            </div>
+                            <p class="news-block__text">
+                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
+                            </p>
+                            <div class="news-block__data">27 сентября, 2021</div>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <div class="news-block__img">
+                            <picture>
+                                <img src="./img/content/news-block/2.jpg" alt="" loading="lazy" width="312" height="180">
+                            </picture>
+                        </div>
+                        <div class="news-block__body">
+                            <div class="news-block__timer">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
+                                </svg>
+                                <span>2-4 минуты на чтение</span>
+                            </div>
+                            <p class="news-block__text">
+                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
+                            </p>
+                            <div class="news-block__data">27 сентября, 2021</div>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <div class="news-block__img">
+                            <picture>
+                                <img src="./img/content/news-block/3.jpg" alt="" loading="lazy" width="312" height="180">
+                            </picture>
+                        </div>
+                        <div class="news-block__body">
+                            <div class="news-block__timer">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
+                                </svg>
+                                <span>2-4 минуты на чтение</span>
+                            </div>
+                            <p class="news-block__text">
+                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
+                            </p>
+                            <div class="news-block__data">27 сентября, 2021</div>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <div class="news-block__img">
+                            <picture>
+                                <img src="./img/content/news-block/4.jpg" alt="" loading="lazy" width="312" height="180">
+                            </picture>
+                        </div>
+                        <div class="news-block__body">
+                            <div class="news-block__timer">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
+                                </svg>
+                                <span>2-4 минуты на чтение</span>
+                            </div>
+                            <p class="news-block__text">
+                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
+                            </p>
+                            <div class="news-block__data">27 сентября, 2021</div>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <div class="news-block__img">
+                            <picture>
+                                <img src="./img/content/news-block/1.jpg" alt="" loading="lazy" width="312" height="180">
+                            </picture>
+                        </div>
+                        <div class="news-block__body">
+                            <div class="news-block__timer">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
+                                </svg>
+                                <span>2-4 минуты на чтение</span>
+                            </div>
+                            <p class="news-block__text">
+                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
+                            </p>
+                            <div class="news-block__data">27 сентября, 2021</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="news-block__btn btn btn_empty">Посмотреть все</a>
+            </div>
+        </section>
+
+        <section class="service-block" id="service">
+            <div class="container">
+                <h2 class="service-block__title">Смежные услуги</h2>
+
+                <ul class="service-block__list">
+                    <li class="service-block__item">
+                        <div class="service-block__item-title">Демонтаж металлоконструкций, зданий и сооружений</div>
+                        <p class="service-block__item-text">Надежные партнеры в демонтаже и утилизации: качественно, недорого, с вывозом ценных отходов.</p>
+                        <a href="#" class="btn btn_blue service-block__item-btn">Подробнее</a>
+                    </li>
+                    <li class="service-block__item">
+                        <div class="service-block__item-title">Оценка вторичного сырья</div>
+                        <p class="service-block__item-text">Мгновенная оценка и выгодная продажа вторичного сырья: узнайте стоимость и получите максимальную выгоду.</p>
+                        <a href="#" class="btn btn_blue service-block__item-btn">Подробнее</a>
+                    </li>
+                    <li class="service-block__item">
+                        <div class="service-block__item-title">Химический анализ металлов и сплавов</div>
+                        <p class="service-block__item-text">Точный химический анализ: получите надежные результаты и полную информацию о составе ваших материалов.</p>
+                        <a href="#" class="btn btn_blue service-block__item-btn">Подробнее</a>
+                    </li>
+                    <li class="service-block__item">
+                        <div class="service-block__item-title">Утилизация отходов, техники и оборудования</div>
+                        <p class="service-block__item-text">Надежная утилизация отходов, техники и оборудования с учетом экологических стандартов..</p>
+                        <a href="#" class="btn btn_blue service-block__item-btn">Подробнее</a>
+                    </li>
+                    <li class="service-block__item">
+                        <div class="service-block__item-title">Финансирование сделок</div>
+                        <p class="service-block__item-text">Обеспечьте финансовую поддержку вашим сделкам с помощью нашего специализированного финансирования.</p>
+                        <a href="#" class="btn btn_blue service-block__item-btn">Подробнее</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn_empty service-block__btn">Посмотреть все</a>
+            </div>
+        </section>
+    </main>
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<div class="modal modal_telegram" id="telegram-modal">
+    <div class="container">
+        <div class="modal__container">
+            <button data-fancybox-close="" class="f-button f-button_custom is-close-btn" title="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                    <path d="M20 20L4 4m16 0L4 20" />
+                </svg>
+            </button>
+
+            <div class="modal__wrap">
+                <div class="modal__img">
+                    <picture>
+                        <img src="./img/content/tg-modal.png" alt="" loading="lazy" width="248px" height="328px">
+                    </picture>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__top">
+                        <div class="modal__top-title">Подписывайтесь на наши Telegram-каналы</div>
+                        <p class="modal__text">
+                            Присоединяйтесь к основному Telegram-чату, общайтесь, делитесь опытом
+                            и получайте полезные советы от участников сообщества.
+                        </p>
+                        <a href="#" class="modal__btn btn" target="_blank">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#tg-icon"></use>
+                            </svg>
+                            <span>Общий чат</span>
+                        </a>
+                    </div>
+                    <div class="modal__bottom">
+                        <div class="modal__bottom-title">Специализированные Telegram-чаты:</div>
+                        <div class="modal__links">
+                            <a href="" class="btn btn_empty modal__link">Базовые металлы</a>
+                            <a href="" class="btn btn_empty modal__link">Редкие материалы</a>
+                            <a href="" class="btn btn_empty modal__link">Редкоземельные</a>
+                            <a href="" class="btn btn_empty modal__link">Новая энергия</a>
+                            <a href="" class="btn btn_empty modal__link">Драгоценные металлы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

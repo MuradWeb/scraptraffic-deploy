@@ -1,0 +1,210 @@
+.buyer {
+  padding: 60px 0
+}
+.buyer__main-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 40px
+}
+.buyer__row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 24px
+}
+.buyer__img {
+  z-index: 1
+}
+.buyer__img img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.buyer__item {
+  position: relative;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #fff
+}
+.buyer__item:nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1/3
+}
+.buyer__item:nth-child(1) .buyer__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+.buyer__item:nth-child(1) .buyer__img img {
+  border-radius: 15px
+}
+.buyer__item:nth-child(1) .buyer__title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: auto
+}
+.buyer__item:nth-child(2) {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e3e5;
+  color: #404040
+}
+.buyer__item:nth-child(2) .buyer__title {
+  margin-bottom: 30px
+}
+.buyer__item:nth-child(2) .buyer__title br {
+  display: none
+}
+.buyer__item:nth-child(2) .buyer__link {
+  color: #404040
+}
+.buyer__item:nth-child(2) .buyer__link svg {
+  stroke: #404040
+}
+.buyer__item:nth-child(2) .buyer__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0
+}
+.buyer__item:nth-child(2) .buyer__img_mob {
+  display: none
+}
+.buyer__item:nth-child(3),
+.buyer__item:nth-child(4) {
+  background: radial-gradient(44.16% 53.82% at 17.31% 58.41%,#545454 0,#404040 100%)
+}
+.buyer__item:nth-child(3) .buyer__title,
+.buyer__item:nth-child(4) .buyer__title {
+  color: #fff
+}
+.buyer__item:nth-child(3) .buyer__title_mob,
+.buyer__item:nth-child(4) .buyer__title_mob {
+  display: none;
+  font-size: 16px
+}
+.buyer__title {
+  margin-top: 52px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: .02em
+}
+.buyer__text {
+  font-size: 16px;
+  line-height: 130%
+}
+.buyer__btn {
+  margin-top: 30px;
+  text-align: center
+}
+.buyer__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: .02em;
+  color: #fff;
+  margin: 0 0 auto auto
+}
+.buyer__link svg {
+  width: 18px;
+  height: 18px
+}
+@media (max-width:1024px) {
+  .buyer {
+    padding: 30px 0
+  }
+  .buyer__main-title {
+    margin-bottom: 30px
+  }
+  .buyer__row {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr)
+  }
+  .buyer__item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3
+  }
+  .buyer__item:nth-child(1) .buyer__title {
+    font-size: 30px
+  }
+  .buyer__item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/3
+  }
+  .buyer__item:nth-child(2) .buyer__img {
+    display: none
+  }
+  .buyer__item:nth-child(2) .buyer__img_mob {
+    display: block
+  }
+  .buyer__item:nth-child(2) .buyer__img_mob img {
+    border-top-right-radius: 10px
+  }
+}
+@media (max-width:768px) {
+  .buyer__row {
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 20px
+  }
+  .buyer__item {
+    padding: 20px;
+    border-radius: 10px
+  }
+  .buyer__item:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/2
+  }
+  .buyer__item:nth-child(1) .buyer__img img {
+    border-radius: 10px
+  }
+  .buyer__item:nth-child(1) .buyer__title {
+    font-size: 24px;
+    margin-bottom: 15px
+  }
+  .buyer__item:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 2/3
+  }
+  .buyer__item:nth-child(2) .buyer__title {
+    margin-bottom: 15px
+  }
+  .buyer__item:nth-child(2) .buyer__title br {
+    display: block
+  }
+  .buyer__item:nth-child(3) .buyer__title,
+  .buyer__item:nth-child(4) .buyer__title {
+    display: none
+  }
+  .buyer__item:nth-child(3) .buyer__title_mob,
+  .buyer__item:nth-child(4) .buyer__title_mob {
+    display: block;
+    text-align: center;
+    margin-top: 0
+  }
+  .buyer__item:nth-child(3) .buyer__link,
+  .buyer__item:nth-child(4) .buyer__link {
+    display: none
+  }
+  .buyer__title {
+    font-size: 20px
+  }
+  .buyer__text br {
+    display: none
+  }
+}
+@media (max-width:1350px) and (min-width:769px) {
+  .buyer__text br:last-of-type {
+    display: block
+  }
+}

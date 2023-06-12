@@ -1,0 +1,21 @@
+.section__title {
+  font-family: Commissioner,sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 110%;
+  margin-bottom: 24px;
+  letter-spacing: .01em
+}
+.section__text {
+  font-family: Commissioner,sans-serif;
+  font-size: 16px;
+  line-height: 130%
+}
+.section__text:not(:last-child) {
+  margin-bottom: 24px
+}
+@media (max-width:1024px) {
+  .section__title {
+    font-size: 24px
+  }
+}

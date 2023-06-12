@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item" aria-current="page">
+                    Склад
+                </li>
+            </ul>
+        </nav>
+
+        <div class="analysis">
+            <div class="container">
+                <div class="analysis__wrap">
+                    <div class="analysis__row">
+                        <div class="analysis__item">
+                            <div class="analysis__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="120" height="240">
+                                </picture>
+                            </div>
+                            <button class="analysis__item-btn btn btn_empty">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#book_icon"></use>
+                                </svg>
+                                <span>Читать фрагмент</span>
+                            </button>
+                        </div>
+                        <div class="analysis__item">
+                            <div class="analysis__top">
+                                <div class="analysis__left">
+                                    <a href="" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#global_icon"></use>
+                                        </svg>
+                                        <span>Русский</span>
+                                    </a>
+
+                                    <a href="" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#solar_book"></use>
+                                        </svg>
+                                        <span>Электронный</span>
+                                    </a>
+                                    <a href="" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#files_icon"></use>
+                                        </svg>
+                                        <span>39</span>
+                                    </a>
+                                </div>
+                                <div class="analysis__right">
+                                    <time datetime="2023-11-03" class="analysis__data">03.11.2023</time>
+                                    <a href="#" class="analysis__right-link" data-tooltip="Внешняя ссылка">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#external_icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="analysis__center">
+                                <h1 class="analysis__title">Анализ рынка теллура в России</h1>
+                                <p class="analysis__text">
+                                    В ноябре 2017 г. DISCOVERY Research Group завершило исследование рынка теллура в России.<br>
+                                    Согласно расчетам аналитиков DISCOVERY Research Group, объем рынка теллура в России в 2016 г. составил 93 276,7 т, что эквивалентно $6 807,9 млн.
+                                    Темп прироста объема рынка составил 4,9% натурального объема рынка и 7,6% стоимостного.
+                                    Наибольшую долю рынка теллура в России в 2016 г. занимало ОАО АНК «Башнефть». Доля общества составляла 20% натурального
+                                </p>
+                                <a href="#" class="analysis__link">
+                                    <span>Читать далее</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </a>
+                                <div class="analysis__left analysis__left_mob">
+                                    <a href="" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#global_icon"></use>
+                                        </svg>
+                                        <span>Русский</span>
+                                    </a>
+
+                                    <a href="#" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#solar_book"></use>
+                                        </svg>
+                                        <span>Электронный</span>
+                                    </a>
+                                    <a href="" class="analysis__left-link">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#files_icon"></use>
+                                        </svg>
+                                        <span>39</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="analysis__bottom">
+                                <a href="#" class="analysis__content">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#list_icon"></use>
+                                    </svg>
+                                    <span>Содержание</span>
+                                </a>
+                                <div class="analysis__order">
+                                    <span class="analysis__price">60 000 руб.</span>
+                                    <button class="analysis__content analysis__content_mob">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#list_icon"></use>
+                                        </svg>
+                                        <span>Содержание</span>
+                                    </button>
+                                    <button class="analysis__order-btn btn btn_blue">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-content">
+            <div class="container">
+                <div class="product-content__tab">
+                    <button class="btn  js-product-btn" data-tab="decr">Описание</button>
+                    <button class="btn btn_empty js-product-btn" data-tab="reviews">Отзывы</button>
+                </div>
+
+                <div class="product-content__block js-product-content-block">
+                    <div class="product-content__description is-active" data-tab="decr">
+                        <div class="product-content__description-flex js-product-content-description" data-max-height="1200">
+                            <div class="product-content__main">
+                                <h2>Цель исследования</h2>
+                                <p>Охарактеризовать текущее состояние и перспективы развития рынка теллура в России</p>
+                                <h2>Задачи исследования:</h2>
+                                <ol>
+                                    <li>Объем, темпы роста и динамика развития рынка теллура в России.</li>
+                                    <li>Объем и темпы роста производства теллура в России.</li>
+                                    <li>Объем импорта теллура в Россию и экспорта теллура из России.</li>
+                                    <li>Рыночные доли производителей на рынке теллура в России.</li>
+                                    <li>Конкурентная ситуация на рынке теллура в России.</li>
+                                    <li>Основные страны-производители теллура.</li>
+                                    <li>Основные страны-потребители теллура.</li>
+                                    <li>Тенденции и перспективы развития рынка теллура в России в ближайшие несколько лет.</li>
+                                    <li>Особенности образования цен на рынке теллура.</li>
+                                    <li>Факторы, определяющие текущее состояние и развитие рынка теллура в России.</li>
+                                    <li>Факторы, препятствующие росту рынка теллура в России.</li>
+                                    <li>Ключевые отрасли, потребляющие теллур в России</li>
+                                </ol>
+
+                                <h2>Объект исследования</h2>
+                                <p>Рынок теллура в России.</p>
+
+                                <h2>Метод сбора и анализа данных</h2>
+                                <p>
+                                    Основным методом сбора данных является мониторинг документов. <br><br>
+                                    В качестве основных методов анализа данных выступают так называемые (1) Традиционный (качественный) контент-анализ интервью и
+                                    документов и (2) Квантитативный (количественный) анализ с применением пакетов программ, к которым имеет доступ наше агентство.<br><br>
+                                    Контент-анализ выполняется в рамках проведения Desk Research (кабинетное исследование).
+                                    В общем виде целью кабинетного исследования является проанализировать ситуацию на рынке теллура и получить (рассчитать) показатели,
+                                    характеризующие его состояние в настоящее время и в будущем.
+                                </p>
+
+
+                                <h2>Источники получения информации</h2>
+                                <ol>
+                                    <li>Базы данных Федеральной Таможенной службы РФ, ФСГС РФ (Росстат).</li>
+                                    <li>Материалы DataMonitor, EuroMonitor, Eurostat.</li>
+                                    <li>Печатные и электронные деловые и специализированные издания, аналитические обзоры.</li>
+                                    <li>Ресурсы сети Интернет в России и мире.</li>
+                                    <li>Экспертные опросы.</li>
+                                    <li>Материалы участников отечественного и мирового рынков.</li>
+                                    <li>Результаты исследований маркетинговых и консалтинговых агентств.</li>
+                                    <li>Материалы отраслевых учреждений и базы данных.</li>
+                                    <li>Результаты ценовых мониторингов.</li>
+                                    <li>Материалы и базы данных статистики ООН (United Nations Statistics Division: Commodity Trade Statistics, Industrial Commodity Statistics, Food and Agriculture Organization и др.).</li>
+                                    <li>Материалы Международного Валютного Фонда (International Monetary Fund).</li>
+                                    <li>Материалы Всемирного банка (World Bank)</li>
+                                    <li>Материалы ВТО (World Trade Organization).</li>
+                                    <li>Материалы Организации экономического сотрудничества и развития (Organization for Economic Cooperation and Development).</li>
+                                    <li>Материалы International Trade Centre.</li>
+                                    <li>Материалы Index Mundi.</li>
+                                    <li>Результаты исследований DISCOVERY Research Group.</li>
+                                </ol>
+
+
+                                <h2>Объем и структура выборки</h2>
+                                <p>
+                                    Процедура контент-анализа документов не предполагает расчета объема выборочной совокупности.
+                                    Обработке и анализу подлежат все доступные исследователю документы.
+                                </p>
+
+                                <h2>Резюме:</h2>
+                                <p>
+                                    В ноябре 2017 г. DISCOVERY Research Group завершило исследование рынка теллура в России. <br><br>
+
+                                    Согласно расчетам аналитиков DISCOVERY Research Group, объем рынка теллура в России в 2016 г. составил 93 276,7 т, что эквивалентно $6 807,9 млн.
+                                    Темп прироста объема рынка составил 4,9% натурального объема рынка и 7,6% стоимостного. <br><br>
+
+                                    Наибольшую долю рынка теллура в России в 2016 г. занимало ОАО АНК «Башнефть».
+                                    Доля общества составляла 20% натурального объема рынка.
+                                    На втором месте ООО «Компания Химкомпонент» с 19%, на третьем – ПАО «НЗХК» с 13% натурального объема рынка. <br><br>
+
+                                    Согласно расчетам аналитиков DISCOVERY Research Group, объем производства теллура в России в 2016 г. составил 93 275,4 т.
+                                    Темп прироста был равен 4,9% натурального объема производства. <br><br>
+
+                                    Объем производства теллура в 2016 г. составил $6 807,9 млн.
+                                    Темп прироста был равен 7,6% стоимостного объема производства. В 2015 г. он равнялся $6 329,9 млн. <br><br>
+
+                                    Наибольший объем теллура в России в 2014-2016 гг. производился в Республике Башкортостан.
+                                    Доля этого субъекта в объеме производства в 2016 г. составила 20% натурального объема производства.
+                                    На третьем месте – Новосибирская область с 13%. <br><br>
+
+                                    Основным производителем теллура в России в 2014-2016 гг. являлось ОАО «Уралэлектромедь».
+                                    В 2016 г. доля этого производителя была равна 56% натурального объема производства.
+                                    Второй по объему производитель в 2016 г. – занимал 23% натурального объема производства, на третий - 21%. <br><br>
+
+                                    Объем импорта теллура в Россию в 2016 г. составил 1 971 кг.
+                                    Темп прироста был равен -39,7%. В 2015 г. объем импорта составил 3 271 кг. <br><br>
+
+                                    Объем экспорта теллура из России в 2016 г. составил 645 кг., тогда как в 2015 г. - 25 кг. <br><br>
+                                </p>
+                            </div>
+                            <div class="product-content__chapters">
+                                <h2>Содержание продукта</h2>
+                                <ul>
+                                    <li>
+                                        Список таблиц и диаграмм <span>9</span>
+                                    </li>
+                                    <li>
+                                        <strong>Таблицы <span>9</span></strong>
+                                    </li>
+                                    <li>
+                                        <strong>Диаграммы <span>9</span></strong>
+                                    </li>
+                                    <li>
+                                        Резюме <span>11</span>
+                                    </li>
+                                    <li>
+                                        <strong>Глава 1. Методология исследования <span>13</span></strong>
+                                    </li>
+
+                                    <li>
+                                        §1.1. Объект исследования <span>14</span>
+                                    </li>
+
+                                    <li>
+                                        §1.2. Цель исследования <span>15</span>
+                                    </li>
+                                    §1.3. Задачи исследования <span>15</span>
+                                    <li>
+                                        §1.4. Метод сбора и анализа данных <span>16</span>
+                                    </li>
+                                    <li>
+                                        §1.5. Источники получения информации <span>17</span>
+                                    </li>
+                                    <li>
+                                        §1.6. Объем и структура выборки <span>18</span>
+                                    </li>
+                                    <li>
+                                        <strong>Глава 2. Классификация и основные характеристики теллура <span>19</span></strong>
+                                    </li>
+                                    <li>
+                                        §2.1. Описание <span>20</span>
+                                    </li>
+                                </ul>
+                                <a href="#">
+                                    <span>Показать полностью</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="btn btn_empty product-content__more js-product-content-more">Читать полностью</button>
+                    </div>
+
+                    <div class="product-content__reviews" data-tab="reviews">
+                        <div class="product-content__reviews-row">
+                            <a href="./img/content/reviews/large_images/img_01_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_01.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">ООО НПП «ИНЖЕКТ»</span>
+                            </a>
+                            <a href="./img/content/reviews/large_images/img_02_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_02.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">Мясокомбинат Южный</span>
+                            </a>
+                            <a href="./img/content/reviews/large_images/img_03_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_03.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">Рассвет</span>
+                            </a>
+                            <a href="./img/content/reviews/large_images/img_04_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_04.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">ПаритетАгро</span>
+                            </a>
+                            <a href="./img/content/reviews/large_images/img_05_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_05.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">ФУКС ОЙЛ</span>
+                            </a>
+                            <a href="./img/content/reviews/large_images/img_06_2.png" data-fancybox="gallery" class="product-content__reviews-item">
+                                <span class="product-content__reviews-icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#zoom_icon"></use>
+                                    </svg>
+                                </span>
+                                <span class="product-content__reviews-img">
+                                    <picture>
+                                        <img src="./img/content/reviews/img_06.png" alt="" loading="lazy" width="312" height="442">
+                                    </picture>
+                                </span>
+                                <span class="product-content__reviews-name">ООО НПП «ИНЖЕКТ»</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="similar-products">
+            <div class="similar-products__container">
+                <div class="container">
+                    <div class="similar-products__title">Смотрите также:</div>
+                    <div class="similar-products__row js-slider-analysis">
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                        <div class="similar-products__item">
+                            <div class="similar-products__img">
+                                <picture>
+                                    <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
+                                </picture>
+                            </div>
+                            <div class="similar-products__name">Анализ рынка теллура в России</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
