@@ -3510,6 +3510,7 @@ img {
 
   .form-filter__form {
     display: none;
+    padding-bottom: 16px;
   }
 
   .form-filter__row {
