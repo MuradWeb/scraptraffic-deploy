@@ -64,36 +64,34 @@
                             </button>
                         </div>
                         <div class="analysis__item">
-                            <div class="analysis__top">
-                                <div class="analysis__left">
-                                    <a href="" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#global_icon"></use>
-                                        </svg>
-                                        <span>Русский</span>
-                                    </a>
+                            <div class="analysis__left">
+                                <div class="analysis__left-pin">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#global_icon"></use>
+                                    </svg>
+                                    <span>Русский</span>
+                                </div>
 
-                                    <a href="" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#solar_book"></use>
-                                        </svg>
-                                        <span>Электронный</span>
-                                    </a>
-                                    <a href="" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#files_icon"></use>
-                                        </svg>
-                                        <span>39</span>
-                                    </a>
+                                <div href="" class="analysis__left-pin">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#solar_book"></use>
+                                    </svg>
+                                    <span>Электронный</span>
                                 </div>
-                                <div class="analysis__right">
-                                    <time datetime="2023-11-03" class="analysis__data">03.11.2023</time>
-                                    <a href="#" class="analysis__right-link" data-tooltip="Внешняя ссылка">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#external_icon"></use>
-                                        </svg>
-                                    </a>
+                                <div href="" class="analysis__left-pin">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#files_icon"></use>
+                                    </svg>
+                                    <span>39</span>
                                 </div>
+                            </div>
+                            <div class="analysis__right">
+                                <time datetime="2023-11-03" class="analysis__data">03.11.2023</time>
+                                <a href="#" class="analysis__right-link" data-tooltip="Внешняя ссылка">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#external_icon"></use>
+                                    </svg>
+                                </a>
                             </div>
                             <div class="analysis__center">
                                 <h1 class="analysis__title">Анализ рынка теллура в России</h1>
@@ -109,27 +107,6 @@
                                         <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
                                     </svg>
                                 </a>
-                                <div class="analysis__left analysis__left_mob">
-                                    <a href="" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#global_icon"></use>
-                                        </svg>
-                                        <span>Русский</span>
-                                    </a>
-
-                                    <a href="#" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#solar_book"></use>
-                                        </svg>
-                                        <span>Электронный</span>
-                                    </a>
-                                    <a href="" class="analysis__left-link">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#files_icon"></use>
-                                        </svg>
-                                        <span>39</span>
-                                    </a>
-                                </div>
                             </div>
                             <div class="analysis__bottom">
                                 <a href="#" class="analysis__content">
@@ -138,16 +115,8 @@
                                     </svg>
                                     <span>Содержание</span>
                                 </a>
-                                <div class="analysis__order">
-                                    <span class="analysis__price">60 000 руб.</span>
-                                    <button class="analysis__content analysis__content_mob">
-                                        <svg>
-                                            <use xlink:href="./img/sprites/sprite.svg#list_icon"></use>
-                                        </svg>
-                                        <span>Содержание</span>
-                                    </button>
-                                    <button class="analysis__order-btn btn btn_blue">Оформить заказ</button>
-                                </div>
+                                <span class="analysis__price">60 000 руб.</span>
+                                <button class="analysis__order-btn btn btn_blue">Оформить заказ</button>
                             </div>
                         </div>
                     </div>
@@ -158,8 +127,8 @@
         <div class="product-content">
             <div class="container">
                 <div class="product-content__tab">
-                    <button class="btn  js-product-btn" data-tab="decr">Описание</button>
-                    <button class="btn btn_empty js-product-btn" data-tab="reviews">Отзывы</button>
+                    <button class="btn  js-product-btn" data-tab="decr" data-text="Описание">Описание</button>
+                    <button class="btn btn_empty js-product-btn" data-tab="reviews" data-text="Отзывы">Отзывы</button>
                 </div>
 
                 <div class="product-content__block js-product-content-block">
@@ -403,70 +372,70 @@
                 <div class="container">
                     <div class="similar-products__title">Смотрите также:</div>
                     <div class="similar-products__row js-slider-analysis">
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" href="#" iv class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
-                        <div class="similar-products__item">
-                            <div class="similar-products__img">
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
+                        <a href="#" class="similar-products__item">
+                            <span class="similar-products__img">
                                 <picture>
                                     <img src="./img/content/image.png" alt="" loading="lazy" width="200" height="268">
                                 </picture>
-                            </div>
-                            <div class="similar-products__name">Анализ рынка теллура в России</div>
-                        </div>
+                            </span>
+                            <span class="similar-products__name">Анализ рынка теллура в России</span>
+                        </a>
                     </div>
                 </div>
             </div>

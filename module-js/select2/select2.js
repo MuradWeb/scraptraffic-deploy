@@ -28,6 +28,7 @@ $(()=> {
         const $selector = $that || $multiple
         $selector.select2({
             ...params,
+            dropdownCssClass: 'customize-dropdown is-multiple',
             multiple: true,
             closeOnSelect: false,
         }).each((_, el)=> {

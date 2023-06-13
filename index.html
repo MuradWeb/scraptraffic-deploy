@@ -41,22 +41,26 @@
                     <div class="intro-block__slider js-intro-block-slider">
                         <div class="intro-block__img">
                             <picture>
-                                <img src="./img/content/intro/pic-1.png" alt="" width="1320" height="607">
+                                <source media="(max-width: 500px)" srcset="./img/content/intro/pic-m1.jpg">
+                                <img src="./img/content/intro/pic-1.jpg" alt="" width="764" height="370" loading="lazy">
                             </picture>
                         </div>
                         <div class="intro-block__img">
                             <picture>
-                                <img src="./img/content/intro/pic-2.png" alt="" width="1320" height="607">
+                                <source media="(max-width: 500px)" srcset="./img/content/intro/pic-m2.jpg">
+                                <img src="./img/content/intro/pic-2.jpg" alt="" width="600" height="439" loading="lazy">
                             </picture>
                         </div>
                         <div class="intro-block__img">
                             <picture>
-                                <img src="./img/content/intro/pic-3.png" alt="" width="1320" height="607">
+                                <source media="(max-width: 500px)" srcset="./img/content/intro/pic-m3.jpg">
+                                <img src="./img/content/intro/pic-3.jpg" alt="" width="688" height="347" loading="lazy">
                             </picture>
                         </div>
                         <div class="intro-block__img">
                             <picture>
-                                <img src="./img/content/intro/pic-4.png" alt="" width="1320" height="607">
+                                <source media="(max-width: 500px)" srcset="./img/content/intro/pic-m4.jpg">
+                                <img src="./img/content/intro/pic-4.jpg" alt="" width="794" height="456" loading="lazy">
                             </picture>
                         </div>
                     </div>
@@ -67,7 +71,7 @@
                         </h1>
 
                         <div class="intro-block__row">
-                            <a href="#material" class="intro-block__item js-intro-block-link" data-slide="0">
+                            <a href="#material" class="intro-block__item js-intro-block-link is-active" data-slide="0">
                                 <span class="intro-block__item-more">Подробнее
                                     <svg>
                                         <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
@@ -109,11 +113,11 @@
             <div class="container">
                 <h2 class="buyer__main-title">Найдите покупателя или продавца</h2>
 
-                <div class="buyer__row">
-                    <div class="buyer__item">
+                <div class="buyer__grid">
+                    <div class="buyer__item buyer__item_first">
                         <div class="buyer__img">
                             <picture>
-                                <img src="./img/content/buyer/img_01.png" alt="" loading="lazy" width="648" height="448">
+                                <img src="./img/content/buyer/map-mask.jpg" alt="" loading="lazy" width="648" height="448">
                             </picture>
                         </div>
                         <div class="buyer__title">Более 500 <br> пунктов приема</div>
@@ -122,49 +126,47 @@
                         </p>
                         <a href="#" class="buyer__btn btn btn_empty">Подробнее</a>
                     </div>
-                    <div class="buyer__item">
-                        <div class="buyer__img">
-                            <picture>
-                                <img src="./img/content/buyer/img_02.png" alt="" loading="lazy" width="488" height="488">
-                            </picture>
-                        </div>
+                    <div class="buyer__right">
+                        <a href="#" class="buyer__item buyer__item_second">
+                            <span class="buyer__img">
+                                <picture>
+                                    <source media="(max-width: 991px)" srcset="./img/content/buyer/img_m-2.png">
+                                    <img src="./img/content/buyer/img_2.png" alt="" loading="lazy" width="488" height="488">
+                                </picture>
+                            </span>
 
-                        <a href="#" class="buyer__link">
-                            <span>Подробнее</span>
-                            <svg>
-                                <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
-                            </svg>
+                            <span class="buyer__link">
+                                <span>Подробнее</span>
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
+                                </svg>
+                            </span>
+                            <span class="buyer__title">Частные <br> объявления</span>
+                            <span class="buyer__text">
+                                Найдите лучшие предложения на вторсырье <br> и металлолом: продажа и покупка <br> без лишних хлопот!
+                            </span>
                         </a>
 
-                        <div class="buyer__img buyer__img_mob">
-                            <picture>
-                                <img src="./img/content/buyer/img_mob.png" alt="" loading="lazy" width="" height="">
-                            </picture>
-                        </div>
-                        <div class="buyer__title">Частные <br> объявления</div>
-                        <p class="buyer__text">
-                            Найдите лучшие предложения на вторсырье <br> и металлолом: продажа и покупка <br> без лишних хлопот!
-                        </p>
-                    </div>
-                    <div class="buyer__item">
-                        <button class="buyer__link js-fancy" data-src="#telegram-modal">
-                            <svg>
-                                <use xlink:href="./img/sprites/sprite.svg#menu_vertical"></use>
-                            </svg>
-                        </button>
-                        <div class="buyer__title">Подписывайтесь на наши Telegram-каналы</div>
-                        <button data-src="#telegram-modal" class="buyer__title buyer__title_mob js-fancy">Telegram</button>
-                    </div>
-                    <div class="buyer__item">
-                        <a href="#" class="buyer__link">
-                            <span>Перейти</span>
-                            <svg>
-                                <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
-                            </svg>
-                        </a>
+                        <div class="buyer__bottom">
+                            <button data-src="#telegram-modal" class="buyer__item buyer__item_last js-fancy">
+                                <span class="buyer__link">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#menu_vertical"></use>
+                                    </svg>
+                                </span>
+                                <span class="buyer__title"><span>Подписывайтесь на наши</span> Telegram<span>-каналы</span></span>
+                            </button>
+                            <a href="#" class="buyer__item buyer__item_last">
+                                <span class="buyer__link">
+                                    <span>Перейти</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_white"></use>
+                                    </svg>
+                                </span>
 
-                        <div class="buyer__title">Присоединяйтесь к нашему YouTube-каналу</div>
-                        <a href="#" target="_blank" class="buyer__title buyer__title_mob">YouTube</a>
+                                <span class="buyer__title"><span>Присоединяйтесь к нашему</span> YouTube<span>-каналу</span></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,16 +188,21 @@
 
                 <div class="content-table__container">
                     <div class="content-table__tab js-content-table-tab">
-                        <button data-type="metal" class="content-table__tab-link content-table__tab-link_active btn">Металлы, стали и сплавы</button>
-                        <button data-type="semimetals" class="content-table__tab-link btn">Полуметаллы, неметалл и их соединения</button>
-                        <button data-type="catalysts" class="content-table__tab-link btn">Катализаторы</button>
-                        <button data-type="radio-components" class="content-table__tab-link btn">Радиодетали</button>
-                        <button data-type="batteries" class="content-table__tab-link btn">Аккумуляторы</button>
-                        <a href="#" class="content-table__tab-link btn">...</a>
+                        <button data-type="metal" data-text="Металлы, стали и сплавы" class="content-table__tab-link content-table__tab-link_active btn">Металлы, стали и сплавы</button>
+                        <button data-type="semimetals" data-text="Полуметаллы, неметалл и их соединения" class="content-table__tab-link btn">Полуметаллы, неметалл и их соединения</button>
+                        <button data-type="catalysts" data-text="Катализаторы" class="content-table__tab-link btn">Катализаторы</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-text="..." class="btn content-table__tab-link js-content-table-tab-more">...</button>
                     </div>
 
                     <div class="content-table__block js-content-table-block">
-                        <ul class="content-table__list content-table__list_active" data-type="metal">
+                        <ul class="content-table__list content-table__list_active js-content-table-list" data-type="metal" data-limit="20">
                             <li class="content-table__item">
                                 <a href="#" class="content-table__link">
                                     <span class="content-table__text">Черный металл</span>
@@ -311,9 +318,33 @@
                                 </a>
                             </li>
                             <li class="content-table__item">
-                                <a href="#" class="content-table__link content-table__link_last">
-                                    <span class="content-table__text">...</span>
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Золото</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
                                 </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Галлий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гольмий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item content-table__item_show-more js-list-show-more">
+                                <button href="#" class="content-table__link content-table__link_last">
+                                    <span class="content-table__link-more">
+                                        Показать все
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#select-arrow"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="content-table__text " data-dots>...</span>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -332,7 +363,7 @@
                     <div class="consultation__content">
                         <div class="consultation__title">Получите <br> бесплатную консультацию</div>
                         <p class="consultation__text">Свяжитесь с нами по телефону <a href=""><strong>8 (981) 740-79-23</strong></a> или оставьте заявку, <br> мы свяжемся с вами в ближайшее время</p>
-                        <button class="btn btn_empty consultation__btn">Оставить заявку</button>
+                        <button class="btn btn_white consultation__btn">Оставить заявку</button>
                     </div>
                     <div class="consultation__img">
                         <picture>
@@ -360,7 +391,7 @@
 
 
                 <div class="content-table__container">
-                    <ul class="content-table__list content-table__list_second">
+                    <ul class="content-table__list content-table__list_second js-content-table-list" data-limit="40">
                         <li class="content-table__item">
                             <a href="#" class="content-table__link">
                                 <span class="content-table__text">Москва</span>
@@ -595,10 +626,38 @@
                                 <span class="content-table__numb">1</span>
                             </a>
                         </li>
+
+
                         <li class="content-table__item">
-                            <a href="#" class="content-table__link content-table__link_last">
-                                <span class="content-table__text">...</span>
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Брянск</span>
+                                <span class="content-table__numb">1</span>
                             </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Великий Новгород</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+                        <li class="content-table__item">
+                            <a href="#" class="content-table__link">
+                                <span class="content-table__text">Волгоград</span>
+                                <span class="content-table__numb">1</span>
+                            </a>
+                        </li>
+
+
+                        <li class="content-table__item content-table__item_show-more js-list-show-more">
+                            <button href="#" class="content-table__link content-table__link_last">
+                                <span class="content-table__link-more">
+                                    Показать все
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#select-arrow"></use>
+                                    </svg>
+                                </span>
+                                <span class="content-table__text " data-dots>...</span>
+                            </button>
                         </li>
                     </ul>
                     <a href="#" class="content-table__btn btn btn_empty">Подробнее</a>
@@ -640,7 +699,7 @@
                         <span class="tools__item-title">Калькулятор выгодности сделки</span>
                     </a>
                     <a href="#" class="tools__item">
-                        <span class="tools__item-btn">Узнать стоимость
+                        <span class="tools__item-btn">Узнать
                             <svg>
                                 <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
                             </svg>
@@ -656,7 +715,7 @@
                         </span>
                     </a>
                     <a href="#" class="tools__item">
-                        <span class="tools__item-btn">Подробнее
+                        <span class="tools__item-btn">Изучить
                             <svg>
                                 <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
                             </svg>
@@ -670,7 +729,7 @@
                         <span class="tools__item-title">Справочник содержания драгметаллов</span>
                     </a>
                     <a href="#" class="tools__item">
-                        <span class="tools__item-btn">Подробнее
+                        <span class="tools__item-btn">Изучить
                             <svg>
                                 <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
                             </svg>
@@ -684,7 +743,7 @@
                         <span class="tools__item-title">Марочник <br> сплавов</span>
                     </a>
                     <a href="#" class="tools__item">
-                        <span class="tools__item-btn">Подробнее
+                        <span class="tools__item-btn">Сделать
                             <svg>
                                 <use xlink:href="./img/sprites/sprite.svg#arrow_icon"></use>
                             </svg>
@@ -717,105 +776,102 @@
                 </div>
 
                 <div class="news-block__slider js-news-block-slider">
-                    <div class="news-block__item">
-                        <div class="news-block__img">
+                    <a href="#" class="news-block__item">
+                        <span class="news-block__img">
                             <picture>
                                 <img src="./img/content/news-block/1.jpg" alt="" loading="lazy" width="312" height="180">
                             </picture>
-                        </div>
-                        <div class="news-block__body">
-                            <div class="news-block__timer">
+                        </span>
+                        <span class="news-block__body">
+                            <span class="news-block__timer">
                                 <svg>
                                     <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
                                 </svg>
                                 <span>2-4 минуты на чтение</span>
-                            </div>
-                            <p class="news-block__text">
+                            </span>
+                            <span class="news-block__text">
                                 Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
-                            </p>
-                            <div class="news-block__data">27 сентября, 2021</div>
-                        </div>
-                    </div>
-
-                    <div class="news-block__item">
-                        <div class="news-block__img">
+                            </span>
+                            <span class="news-block__data">27 сентября, 2021</span>
+                        </span>
+                    </a>
+                    <a href="#" class="news-block__item">
+                        <span class="news-block__img">
                             <picture>
                                 <img src="./img/content/news-block/2.jpg" alt="" loading="lazy" width="312" height="180">
                             </picture>
-                        </div>
-                        <div class="news-block__body">
-                            <div class="news-block__timer">
+                        </span>
+                        <span class="news-block__body">
+                            <span class="news-block__timer">
                                 <svg>
                                     <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
                                 </svg>
                                 <span>2-4 минуты на чтение</span>
-                            </div>
-                            <p class="news-block__text">
+                            </span>
+                            <span class="news-block__text">
                                 Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
-                            </p>
-                            <div class="news-block__data">27 сентября, 2021</div>
-                        </div>
-                    </div>
-
-                    <div class="news-block__item">
-                        <div class="news-block__img">
+                            </span>
+                            <span class="news-block__data">27 сентября, 2021</span>
+                        </span>
+                    </a>
+                    <a href="#" class="news-block__item">
+                        <span class="news-block__img">
                             <picture>
                                 <img src="./img/content/news-block/3.jpg" alt="" loading="lazy" width="312" height="180">
                             </picture>
-                        </div>
-                        <div class="news-block__body">
-                            <div class="news-block__timer">
+                        </span>
+                        <span class="news-block__body">
+                            <span class="news-block__timer">
                                 <svg>
                                     <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
                                 </svg>
                                 <span>2-4 минуты на чтение</span>
-                            </div>
-                            <p class="news-block__text">
+                            </span>
+                            <span class="news-block__text">
                                 Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
-                            </p>
-                            <div class="news-block__data">27 сентября, 2021</div>
-                        </div>
-                    </div>
-
-                    <div class="news-block__item">
-                        <div class="news-block__img">
+                            </span>
+                            <span class="news-block__data">27 сентября, 2021</span>
+                        </span>
+                    </a>
+                    <a href="#" class="news-block__item">
+                        <span class="news-block__img">
                             <picture>
                                 <img src="./img/content/news-block/4.jpg" alt="" loading="lazy" width="312" height="180">
                             </picture>
-                        </div>
-                        <div class="news-block__body">
-                            <div class="news-block__timer">
+                        </span>
+                        <span class="news-block__body">
+                            <span class="news-block__timer">
                                 <svg>
                                     <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
                                 </svg>
                                 <span>2-4 минуты на чтение</span>
-                            </div>
-                            <p class="news-block__text">
-                                Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
-                            </p>
-                            <div class="news-block__data">27 сентября, 2021</div>
-                        </div>
-                    </div>
+                            </span>
+                            <span class="news-block__text">
+                                Сравнение качества образцов порош
+                            </span>
+                            <span class="news-block__data">27 сентября, 2021</span>
+                        </span>
+                    </a>
 
-                    <div class="news-block__item">
-                        <div class="news-block__img">
+                    <a href="#" class="news-block__item">
+                        <span class="news-block__img">
                             <picture>
                                 <img src="./img/content/news-block/1.jpg" alt="" loading="lazy" width="312" height="180">
                             </picture>
-                        </div>
-                        <div class="news-block__body">
-                            <div class="news-block__timer">
+                        </span>
+                        <span class="news-block__body">
+                            <span class="news-block__timer">
                                 <svg>
                                     <use xlink:href="./img/sprites/sprite.svg#timer_icon"></use>
                                 </svg>
                                 <span>2-4 минуты на чтение</span>
-                            </div>
-                            <p class="news-block__text">
+                            </span>
+                            <span class="news-block__text">
                                 Сравнение качества образцов порошка ферротитана перед поставкой его производителям фейерверков
-                            </p>
-                            <div class="news-block__data">27 сентября, 2021</div>
-                        </div>
-                    </div>
+                            </span>
+                            <span class="news-block__data">27 сентября, 2021</span>
+                        </span>
+                    </a>
                 </div>
                 <a href="#" class="news-block__btn btn btn_empty">Посмотреть все</a>
             </div>

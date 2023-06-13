@@ -127,3 +127,12 @@
     justify-content: center
   }
 }
+@media (max-width:500px) {
+  .modal.fancybox__content {
+    padding: 0
+  }
+  .modal .f-button.f-button_custom {
+    top: 10px;
+    right: 10px
+  }
+}

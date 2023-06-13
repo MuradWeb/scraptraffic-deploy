@@ -6,23 +6,21 @@
   color: #fff;
   padding: 12px;
   background-color: #30b4ff;
-  transition: background-color .3s linear,box-shadow .3s linear,color .3s linear;
+  transition: background-color .3s linear;
   border-radius: 8px;
   border: 1px solid #30b4ff;
   text-align: center
 }
-.btn:hover:not(:active):not(.btn_empty) {
+.btn:hover:not(:active):not(.btn_empty):not(.btn_white) {
   background-color: #47bdff
 }
-.btn:focus {
-  box-shadow: 0 0 0 .2rem rgba(38,143,255,.5)
-}
-.btn:focus:not(.btn_empty) {
+.btn:focus:not(.btn_empty):not(.btn_white) {
   background-color: #0ea8ff;
   color: #fff
 }
 .btn:disabled {
-  background: #d9dee0
+  pointer-events: none!important;
+  background: #d9dee0!important
 }
 .btn_empty {
   color: #30b4ff;
@@ -32,7 +30,12 @@
 .btn_empty:hover:not(:active) {
   color: #47bdff
 }
-.btn_empty:disabled {
+.btn_white {
+  color: #404040;
   background-color: #fff;
-  color: #d9dee0
+  border-color: currentColor
+}
+.btn_white:focus,
+.btn_white:hover:not(:active) {
+  background-color: #f3f3f3
 }

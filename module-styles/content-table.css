@@ -48,21 +48,55 @@
   flex-direction: column
 }
 .content-table__tab {
+  position: relative;
   display: flex;
-  margin: 0 -6px 20px
+  flex-wrap: wrap;
+  height: 54px;
+  overflow: hidden;
+  margin: -7px
 }
 .content-table__tab-link {
+  font-weight: 400;
   background-color: #fff;
   color: #404040;
-  margin: 0 6px;
+  margin: 7px;
   border-radius: 6px;
-  transition: background-color .3s linear,color .3s linear
+  transition: background-color .3s linear,font-weight .4s ease-in-out,color .3s linear;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+.content-table__tab-link::after {
+  content: attr(data-text);
+  content: attr(data-text)/"";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  font-weight: 600
 }
 .content-table__tab-link.content-table__tab-link_active,
 .content-table__tab-link:active,
 .content-table__tab-link:hover {
+  font-weight: 600;
   color: #fff;
   background-color: #30b4ff
+}
+.content-table__tab-link:focus {
+  background-color: #fff
+}
+.content-table__tab-link:last-of-type:not(.content-table__tab-link_show) {
+  display: none
+}
+.content-table__tab-link.content-table__tab-link_show {
+  width: 50px
+}
+.content-table__block {
+  margin-top: 20px
 }
 .content-table__block .content-table__list:not(.content-table__list_active) {
   display: none
@@ -74,15 +108,10 @@
   column-gap: 40px
 }
 .content-table__item {
-  margin-bottom: 4px
+  margin: 0 -10px -10px;
+  padding-bottom: 6px
 }
-.content-table__item:nth-child(10) {
-  margin-bottom: 0
-}
-.content-table__item:last-of-type {
-  margin-bottom: 0
-}
-.content-table__item:last-of-type::after {
+.content-table__item.content-table__item_show-more {
   display: none
 }
 .content-table__link {
@@ -113,6 +142,20 @@
   flex: auto;
   order: 1
 }
+.content-table__link-more {
+  display: flex;
+  align-items: center;
+  color: #30b4ff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: .01em
+}
+.content-table__link-more svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 2px
+}
 .content-table__text {
   color: #30b4ff
 }
@@ -126,6 +169,20 @@
 .content-table__btn {
   display: none;
   text-align: center
+}
+@media (min-width:769px) {
+  .content-table__tab-link.content-table__tab-link_hide {
+    display: none
+  }
+  .content-table__item[data-limit="20"]:not(:nth-child(-n+20)):not(.is-show-all) {
+    display: none
+  }
+  .content-table__item[data-limit="40"]:not(:nth-child(-n+40)):not(.is-show-all) {
+    display: none
+  }
+  .content-table__link-more {
+    display: none
+  }
 }
 @media (min-width:1201px) {
   .content-table__list.content-table__list_second {
@@ -147,17 +204,24 @@
   }
 }
 @media (max-width:768px) {
+  .content-table__head-link {
+    display: none
+  }
   .content-table__container {
-    padding: 20px;
-    border-radius: 10px
+    padding: 0;
+    border: 0
+  }
+  .content-table__tab {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 44px
+  }
+  .content-table__tab-link.content-table__tab-link_show {
+    display: none
   }
   .content-table__tab-link {
-    display: none;
-    margin: 0 6px
-  }
-  .content-table__tab-link:nth-child(1),
-  .content-table__tab-link:nth-child(6) {
-    display: block
+    margin: 0 6px;
+    white-space: nowrap
   }
   .content-table__list {
     -moz-column-count: 1;
@@ -165,7 +229,10 @@
     -moz-column-gap: 0;
     column-gap: 0
   }
-  .content-table__item:not(:nth-child(-n+10)) {
+  .content-table__item:not(:nth-child(-n+10)):not(.is-show-all) {
+    display: none
+  }
+  .content-table__link [data-dots] {
     display: none
   }
   .content-table__btn {
@@ -177,17 +244,13 @@
   }
 }
 @media (max-width:479px) {
-  .content-table__head-link {
-    display: none
-  }
   .content-table__btn {
     max-width: 100%
   }
 }
 @media (max-width:1240px) and (min-width:768px) {
   .content-table__tab {
-    flex-wrap: wrap;
-    margin: -6px -6px 20px
+    flex-wrap: wrap
   }
 }
 @media (max-width:1200px) and (min-width:1025px) {
@@ -200,5 +263,10 @@
   .content-table__list.content-table__list_second {
     -moz-column-count: 2;
     column-count: 2
+  }
+}
+@media speech {
+  .content-table__tab-link::after {
+    display: none
   }
 }

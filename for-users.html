@@ -61,6 +61,12 @@
                                 Фильтр
                                 <span class="form-filter__badge">1</span>
                             </div>
+                            <button class="form-filter__reset js-form-filter-reset">
+                                <span>Очистить</span>
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                                </svg>
+                            </button>
 
                             <div class="form-filter__arrow">
                                 <svg>
@@ -69,45 +75,47 @@
                             </div>
                         </div>
 
-                        <button class="form-filter__reset js-form-filter-reset">Очистить</button>
 
                         <form action="#" class="form-filter__form js-form-filter">
-                            <label class="form-filter__label">
-                                <select name="country" data-placeholder="Страна" class="select js-select2 form-filter__select">
-                                    <option></option>
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </label>
+                            <div class="form-filter__row">
+                                <label class="form-filter__label">
+                                    <select name="country" data-placeholder="Страна" class="select js-select2 form-filter__select">
+                                        <option></option>
+                                        <option value="Российская Федерация" selected>Российская Федерация</option>
+                                        <option value="Азербайджан">Азербайджан2</option>
+                                        <option value="Казахстан">Казахстан</option>
+                                        <option value="Киргизия">Киргизия</option>
+                                    </select>
+                                </label>
 
-                            <label class="form-filter__label">
-                                <select name="city" data-placeholder="Страна" class="select js-select2 form-filter__select">
-                                    <option></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </label>
+                                <label class="form-filter__label">
+                                    <select name="city" data-placeholder="Города" class="select js-select2 form-filter__select">
+                                        <option></option>
+                                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </label>
 
-                            <label class="form-filter__label">
-                                <select name="materials[]" class="select js-select2 form-filter__select" data-placeholder="Материал" multiple="multiple">
-                                    <option value="One" selected>One</option>
-                                    <option value="Two" selected>Two</option>
-                                    <option value="Three" selected>Three</option>
-                                    <option value="Four" selected>Four</option>
-                                    <option value="Five" selected>Five</option>
-                                    <option value="Six">Six</option>
-                                </select>
-                            </label>
+                                <label class="form-filter__label">
+                                    <select name="materials[]" class="select js-select2 form-filter__select" data-placeholder="Материал" multiple="multiple">
+                                        <option value="One" selected>One</option>
+                                        <option value="Two" selected>Two</option>
+                                        <option value="Three" selected>Three</option>
+                                        <option value="Four" selected>Four</option>
+                                        <option value="Five" selected>Five</option>
+                                        <option value="Six">Six</option>
+                                    </select>
+                                </label>
 
-                            <label class="form-filter__label">
-                                <select name="form" data-placeholder="Форма" class="select js-select2 form-filter__select">
-                                    <option></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </label>
+                                <label class="form-filter__label">
+                                    <select name="form" data-placeholder="Форма" class="select js-select2 form-filter__select">
+                                        <option></option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </label>
+                            </div>
                         </form>
-
                     </div>
                 </div>
 
@@ -116,8 +124,8 @@
                         <div class="materials__card">
                             <div class="materials__card-head">
                                 <div class="materials__card-title">
-                                    <h2 class="materials__card-name">Мышьяк металлический</h2>
-                                    <div class="materials__card-code">ОСЧ 17-4</div>
+                                    <h2 class="materials__card-name">Мышьяк металлический (кристаллы) купить со склада</h2>
+                                    <div class="materials__card-code">Кобальт 58-60 %; хром 28-30%</div>
                                 </div>
 
                                 <div class="materials__card-links">

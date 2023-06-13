@@ -34,6 +34,7 @@
   background-color: #30b4ff
 }
 .similar-products__item {
+  display: block;
   width: calc(16.666% - 24px);
   margin: 0 12px
 }
@@ -41,12 +42,15 @@
   display: none
 }
 .similar-products__img {
+  display: block;
   margin-bottom: 15px
 }
 .similar-products__img img {
   border-radius: 8px
 }
 .similar-products__name {
+  display: block;
+  color: #404040;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;

@@ -2,8 +2,23 @@
   padding-top: 8px;
   margin-bottom: 32px
 }
+.form-filter__wrap {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e2e3e5
+}
 .form-filter__head {
-  width: 50%
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.form-filter__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: .02em
 }
 .form-filter__badge {
   font-weight: 500;
@@ -35,29 +50,18 @@
 .form-filter__reset:hover:not(:active) {
   color: #c71700
 }
-.form-filter__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: .02em
-}
-.form-filter__wrap {
-  position: relative;
-  background-color: #f8f8f8;
-  padding: 30px;
-  border-radius: 15px;
-  border: 1px solid #e2e3e5;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start
+.form-filter__reset svg {
+  width: 20px;
+  height: 20px
 }
 .form-filter__form {
-  flex: 0 1 100%;
+  width: 100%;
+  padding-top: 16px
+}
+.form-filter__row {
   display: flex;
   flex-wrap: wrap;
-  margin: -5px;
-  padding-top: 16px;
-  max-width: 100%
+  margin: -5px
 }
 .form-filter__label {
   margin: 5px;
@@ -65,7 +69,8 @@
 }
 @media (min-width:441px) {
   .form-filter__arrow,
-  .form-filter__badge {
+  .form-filter__badge,
+  .form-filter__reset svg {
     display: none
   }
 }
@@ -94,10 +99,8 @@
 @media (max-width:440px) {
   .form-filter__head {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 0
+    padding: 16px 0;
+    cursor: pointer
   }
   .form-filter__head.is-show .form-filter__arrow svg {
     transform: rotate(180deg)
@@ -109,13 +112,17 @@
     display: block
   }
   .form-filter__reset {
-    order: 3;
-    margin: 10px 0 10px auto;
-    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px
+  }
+  .form-filter__form,
+  .form-filter__reset span {
     display: none
   }
-  .form-filter__form {
-    display: none;
+  .form-filter__row {
     margin: -10px 0 0
   }
   .form-filter__label {

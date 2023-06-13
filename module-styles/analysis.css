@@ -20,7 +20,9 @@
 }
 .analysis__item:last-of-type {
   width: 100%;
-  max-width: 1050px
+  max-width: 1050px;
+  display: flex;
+  flex-wrap: wrap
 }
 .analysis__img {
   margin-bottom: 20px
@@ -46,6 +48,9 @@
   line-height: 110%;
   letter-spacing: .01em
 }
+.analysis__center {
+  margin-top: 25px
+}
 .analysis__text {
   font-size: 16px;
   line-height: 130%;
@@ -69,39 +74,31 @@
   height: 18px;
   stroke: #30b4ff
 }
-.analysis__top {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between
-}
 .analysis__left {
   display: flex;
-  margin: 0 -5px
+  flex-wrap: wrap;
+  margin: -5px;
+  width: 85%
 }
-.analysis__left_mob {
-  display: none
-}
-.analysis__left-link {
+.analysis__left-pin {
   display: flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 5px;
   border: 1px solid #e2e3e5;
   border-radius: 6px;
   padding: 8px 12px;
   color: #404040;
   transition: background-color .3s linear
 }
-.analysis__left-link svg {
+.analysis__left-pin svg {
   width: 16px;
   height: 16px;
   margin-right: 8px
 }
-.analysis__left-link:hover:not(:active) {
-  background-color: #e2e3e5
-}
 .analysis__right {
   display: flex;
-  align-items: center
+  align-items: center;
+  margin-left: auto
 }
 .analysis__data {
   font-size: 12px;
@@ -114,7 +111,9 @@
   height: 24px
 }
 .analysis__bottom {
+  flex: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-top: 20px
 }
@@ -125,7 +124,8 @@
   font-size: 14px;
   line-height: 130%;
   color: #30b4ff;
-  transition: color .3s linear
+  transition: color .3s linear;
+  margin-right: 24px
 }
 .analysis__content:hover:not(:active) {
   color: #038cdb
@@ -136,65 +136,64 @@
   margin-right: 8px;
   stroke: #30b4ff
 }
-.analysis__content_mob {
-  display: none
-}
 .analysis__price {
   font-weight: 600;
   font-size: 24px;
   line-height: 110%;
   letter-spacing: .02em;
-  margin-right: 40px
+  margin-right: 40px;
+  margin-left: auto
 }
 @media (max-width:1024px) {
   .analysis__title {
     font-size: 24px
   }
+  .analysis__center {
+    order: 2;
+    margin: 16px 0
+  }
   .analysis__text {
     margin: 16px 0
   }
-  .analysis__top {
-    margin-bottom: 16px
-  }
   .analysis__left {
-    display: none
-  }
-  .analysis__left_mob {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 16px -5px 0
-  }
-  .analysis__left_mob .analysis__left-link {
-    margin: 5px 5px 0
+    order: 3
   }
   .analysis__right {
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
+    order: 1px
+  }
+  .analysis__bottom {
+    order: 4;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: initial
   }
   .analysis__order {
     display: flex;
     justify-content: space-between
   }
-  .analysis__content {
-    display: none
+  .analysis__order-btn {
+    order: 3;
+    width: 100%;
+    max-width: 225px
   }
-  .analysis__content_mob {
-    display: flex;
+  .analysis__content {
+    order: 2;
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 225px;
+    padding: 13px;
     justify-content: center;
-    background-color: #fff;
-    border: 1px solid #30b4ff;
-    padding: 12px 20px;
-    border-radius: 8px;
-    margin-right: 5px
+    border: 1px solid currentColor;
+    border-radius: 8px
   }
   .analysis__price {
-    margin-right: 15px
-  }
-}
-@media (max-width:1024px) and (max-width:540px) {
-  .analysis__content_mob {
-    margin: 16px 0 10px;
-    text-align: center
+    margin-right: 15px;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 16px
   }
 }
 @media (max-width:900px) {
@@ -221,6 +220,14 @@
     flex-direction: column;
     border-top: 1px solid #e2e3e5;
     width: 100%
+  }
+}
+@media (max-width:420px) {
+  .analysis__order-btn {
+    max-width: 100%
+  }
+  .analysis__content {
+    min-width: 100%
   }
 }
 @media (max-width:400px) {

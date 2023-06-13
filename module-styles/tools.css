@@ -22,7 +22,7 @@
   padding: 30px;
   border: 1px solid #e2e3e5;
   border-radius: 15px;
-  transition: color .4s linear,border-color .4s linear
+  transition: color .1s linear,border-color .1s linear
 }
 .tools__item:hover {
   border-color: transparent;
