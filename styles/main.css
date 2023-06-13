@@ -1812,6 +1812,10 @@ img {
   transition: stroke 0.4s linear;
 }
 
+.news-block {
+  padding: 60px 0;
+}
+
 .news-block__head {
   display: flex;
   align-items: center;
@@ -2787,6 +2791,10 @@ img {
   .tools__item:nth-child(6) {
     grid-column: 3/4;
     grid-row: 2/3;
+  }
+
+  .news-block {
+    padding: 30px 0;
   }
 
   .news-block__head {
