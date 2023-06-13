@@ -29,7 +29,7 @@
 }
 .intro-block__img {
   height: 607px;
-  border-radius: 30px
+  background-color: #ecf7ff
 }
 .intro-block__img.slick-slide {
   height: 607px
@@ -38,7 +38,8 @@
   display: none
 }
 .intro-block__img img {
-  width: 100%
+  width: 100%;
+  height: 100%
 }
 .intro-block__row {
   flex-wrap: wrap;
@@ -125,10 +126,7 @@
   .intro-block__slider {
     border-radius: 10px
   }
-  .intro-block__img {
-    border-radius: 10px;
-    height: 440px
-  }
+  .intro-block__img,
   .intro-block__img.slick-slide {
     height: 440px
   }
