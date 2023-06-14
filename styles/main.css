@@ -3497,7 +3497,7 @@ img {
   }
 
   .form-filter__head.is-show ~ .form-filter__form {
-    display: flex;
+    display: block;
   }
 
   .form-filter__head.is-show ~ .form-filter__reset {

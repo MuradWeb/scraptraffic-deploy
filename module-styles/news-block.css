@@ -1,3 +1,6 @@
+.news-block {
+  padding: 60px 0
+}
 .news-block__head {
   display: flex;
   align-items: center;
@@ -115,6 +118,9 @@
   }
 }
 @media (max-width:1024px) {
+  .news-block {
+    padding: 30px 0
+  }
   .news-block__head {
     margin-bottom: 30px
   }

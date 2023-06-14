@@ -105,10 +105,8 @@
   .form-filter__head.is-show .form-filter__arrow svg {
     transform: rotate(180deg)
   }
-  .form-filter__head.is-show ~ .form-filter__form {
-    display: flex
-  }
-  .form-filter__head.is-show ~ .form-filter__reset {
+  .form-filter__head.is-show~.form-filter__form,
+  .form-filter__head.is-show~.form-filter__reset {
     display: block
   }
   .form-filter__reset {
@@ -118,9 +116,12 @@
     height: 20px;
     width: 20px
   }
-  .form-filter__form,
   .form-filter__reset span {
     display: none
+  }
+  .form-filter__form {
+    display: none;
+    padding-bottom: 16px
   }
   .form-filter__row {
     margin: -10px 0 0

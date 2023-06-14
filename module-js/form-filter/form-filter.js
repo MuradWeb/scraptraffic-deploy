@@ -13,7 +13,8 @@ $(()=> {
     })
 
     // Прослушиватель для сброса настроек фильтрации 
-    $filterReset.on('click', ()=> {
+    $filterReset.on('click', e=> {
+        e.stopPropagation();
         $selectElements.val(null).trigger('change')
         {/*
             этот фрагмент желательно удалить на проде, и написать свою логику под ваши требования, 

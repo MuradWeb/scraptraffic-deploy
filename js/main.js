@@ -124,7 +124,8 @@ $(function () {
   });
 
   // Прослушиватель для сброса настроек фильтрации 
-  $filterReset.on('click', function () {
+  $filterReset.on('click', function (e) {
+    e.stopPropagation();
     $selectElements.val(null).trigger('change');
     {/*
         этот фрагмент желательно удалить на проде, и написать свою логику под ваши требования, 
