@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item" aria-current="page">Частные объявления</li>
+            </ul>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Объявления о продаже и покупке утильсырья и металлолома</h1>
+                <p class="section__text">
+                    Бесплатная доска объявлений ScrapTraffic.com - ваш источник для покупки и продажи отходов и металлолома.
+                    Размещайте объявления о ломе цветных и черных металлов, а также других утильсырьях. Получайте уведомления о новых объявлениях и будьте в курсе первыми.
+                    Абсолютно бесплатно для всех пользователей.
+                </p>
+
+                <div class="form-filter">
+                    <div class="form-filter__wrap">
+                        <div class="form-filter__head js-form-filter-head">
+                            <div class="form-filter__title">
+                                Фильтр
+                                <span class="form-filter__badge">1</span>
+                            </div>
+                            <button class="form-filter__reset js-form-filter-reset">
+                                <span>Очистить</span>
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                                </svg>
+                            </button>
+
+                            <div class="form-filter__arrow">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#select-arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <form action="#" class="form-filter__form js-form-filter">
+                            <div class="form-filter__row">
+                                <label class="form-filter__label">
+                                    <select name="country" data-placeholder="Страна" class="select js-select2 form-filter__select">
+                                        <option></option>
+                                        <option value="Российская Федерация">Российская Федерация</option>
+                                        <option value="Азербайджан">Азербайджан2</option>
+                                        <option value="Казахстан">Казахстан</option>
+                                        <option value="Киргизия">Киргизия</option>
+                                    </select>
+                                </label>
+
+                                <label class="form-filter__label">
+                                    <select name="city" data-placeholder="Города" class="select js-select2 form-filter__select">
+                                        <option></option>
+                                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </label>
+
+                                <label class="form-filter__label">
+                                    <select name="category[]" class="select js-select2 form-filter__select" data-placeholder="Категория лома" multiple="multiple">
+                                        <option value="One" selected>One</option>
+                                        <option value="Two" selected>Two</option>
+                                        <option value="Three" selected>Three</option>
+                                        <option value="Four" selected>Four</option>
+                                        <option value="Five" selected>Five</option>
+                                        <option value="Six">Six</option>
+                                    </select>
+                                </label>
+
+                                <label class="form-filter__label">
+                                    <input type="text" placeholder="Поиск" class="form-filter__search">
+                                    <span class="form-filter__icon">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#search_icon"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="cards__tab js-cards-tab">
+                        <div class="cards__tab-list">
+                            <button class="btn btn_empty cards__tab-btn cards__tab-btn_active" data-filter="all">Все</button>
+                            <button class="btn btn_empty cards__tab-btn" data-filter="purchase">Закупка</button>
+                            <button class="btn btn_empty cards__tab-btn" data-filter="sale">Продажа</button>
+                        </div>
+                        <button class="btn cards__tab-add">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#add_plus"></use>
+                            </svg>
+                            Добавить объявление
+                        </button>
+                    </div>
+
+                    <div class="js-cards-list">
+                        <div class="cards__wrap">
+                            <div class="card-ads cards__card" data-filter="sale">
+                                <div class="card-ads__flex">
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__row">
+                                            <div class="card-ads__row-item card-ads__row-item_green" data-tooltip="Категория">Продажа</div>
+                                            <div class="card-ads__row-item" data-tooltip="Город">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_pin"></use>
+                                                </svg>
+                                                <span>Брянск</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Сроки готовности">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days"></use>
+                                                </svg>
+                                                <span>После оценки</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Объем">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box"></use>
+                                                </svg>
+                                                <span>1500 т</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="По запросу">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin"></use>
+                                                </svg>
+                                                <span>По запросу</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-ads__title">Черные металлы, стали и сплавы</div>
+                                        <p class="card-ads__text">
+                                            ПАО "ТОАЗ" реализует лом черных металлов 5А в количетсве 1500тн.,
+                                            стружку от обработки черных металлов в количестве 11тн., лом чугунав количестве 32тн. Информация по запросу
+                                        </p>
+                                        <ul class="card-ads__list">
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                                                </svg>
+                                                <span>Город:</span>
+                                                <span>Брянск</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days_blue"></use>
+                                                </svg>
+                                                <span>Сроки готовности:</span>
+                                                <span>После оценки</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box_blue"></use>
+                                                </svg>
+                                                <span>Объем:</span>
+                                                <span>1500 т</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin_blue"></use>
+                                                </svg>
+                                                <span>Цена:</span>
+                                                <span>По запросу</span>
+                                            </li>
+                                        </ul>
+                                        <span class="card-ads__bottom-text">ПАО "ТОАЗ"</span>
+                                    </div>
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__date">12 марта 2022</div>
+                                        <a href="tel:88121234567" class="card-ads__btn btn">Связаться</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-ads cards__card" data-filter="purchase">
+                                <div class="card-ads__flex">
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__row">
+                                            <div class="card-ads__row-item card-ads__row-item_orange" data-tooltip="Категория">Закупка</div>
+                                            <div class="card-ads__row-item" data-tooltip="Город">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_pin"></use>
+                                                </svg>
+                                                <span>Брянск</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Сроки готовности">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days"></use>
+                                                </svg>
+                                                <span>После оценки</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Объем">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box"></use>
+                                                </svg>
+                                                <span>1500 т</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="По запросу">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin"></use>
+                                                </svg>
+                                                <span>По запросу</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-ads__title">Цветные металлы и сплавы</div>
+                                        <p class="card-ads__text">
+                                            Покупаем баббит, ферросплавы, титан, бронзу, цветной металлопрокат, никель, кобальт, вольфрам, молибден, ванадий, тантал, рений, цирконий, экзотика
+                                        </p>
+                                        <ul class="card-ads__list">
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                                                </svg>
+                                                <span>Город:</span>
+                                                <span>Брянск</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days_blue"></use>
+                                                </svg>
+                                                <span>Сроки готовности:</span>
+                                                <span>После оценки</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box_blue"></use>
+                                                </svg>
+                                                <span>Объем:</span>
+                                                <span>1500 т</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin_blue"></use>
+                                                </svg>
+                                                <span>Цена:</span>
+                                                <span>По запросу</span>
+                                            </li>
+                                        </ul>
+                                        <span class="card-ads__bottom-text">Руслан</span>
+                                    </div>
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__date">12 марта 2022</div>
+                                        <a href="tel:88121234567" class="card-ads__btn btn">Связаться</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-ads cards__card" data-filter="sale">
+                                <div class="card-ads__flex">
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__row">
+                                            <div class="card-ads__row-item card-ads__row-item_green" data-tooltip="Категория">Продажа</div>
+                                            <div class="card-ads__row-item" data-tooltip="Город">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_pin"></use>
+                                                </svg>
+                                                <span>Брянск</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Сроки готовности">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days"></use>
+                                                </svg>
+                                                <span>После оценки</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Объем">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box"></use>
+                                                </svg>
+                                                <span>2 т</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="По запросу">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin"></use>
+                                                </svg>
+                                                <span>По запросу</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-ads__title">Синтетические полимеры</div>
+                                        <p class="card-ads__text">
+                                            Мы производим готовые короба из гофрокартона, полиуретан мы используем, чтобы резать картон на формы для коробов.
+                                            Полиуретан в отличном состоянии. Находимся мы в Тверской области.
+                                            <a href="#" class="card-ads__more">
+                                                <span>Показать еще</span>
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+                                        <ul class="card-ads__list">
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                                                </svg>
+                                                <span>Город:</span>
+                                                <span>Брянск</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days_blue"></use>
+                                                </svg>
+                                                <span>Сроки готовности:</span>
+                                                <span>После оценки</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box_blue"></use>
+                                                </svg>
+                                                <span>Объем:</span>
+                                                <span>1500 т</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin_blue"></use>
+                                                </svg>
+                                                <span>Цена:</span>
+                                                <span>По запросу</span>
+                                            </li>
+                                        </ul>
+                                        <span class="card-ads__bottom-text">ПАО "ТОАЗ"</span>
+                                    </div>
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__date">12 марта 2022</div>
+                                        <a href="tel:88121234567" class="card-ads__btn btn">Связаться</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-ads cards__card" data-filter="sale">
+                                <div class="card-ads__flex">
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__row">
+                                            <div class="card-ads__row-item card-ads__row-item_green" data-tooltip="Категория">Продажа</div>
+                                            <div class="card-ads__row-item" data-tooltip="Город">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_pin"></use>
+                                                </svg>
+                                                <span>Брянск</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Сроки готовности">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days"></use>
+                                                </svg>
+                                                <span>После оценки</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="Объем">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box"></use>
+                                                </svg>
+                                                <span>1500 т</span>
+                                            </div>
+                                            <div class="card-ads__row-item" data-tooltip="По запросу">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin"></use>
+                                                </svg>
+                                                <span>По запросу</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-ads__title">Черные металлы, стали и сплавы</div>
+                                        <p class="card-ads__text">
+                                            Продам прецизионные стали, титан, нержавейку, сталь. В наличии: 45НХТ(ЭП218), 36нхтю, 50Н, 79HM, Н43ХТ, 42НХТЮ, 44НХТЮ, 64Н, 29НК, Х20Н80, Х15Н60; 12Х18Н10Т, 14Х17Н2; У8А, 12Х13, 40Х13, 30Х13, 20ХН3А; ВТ1-0, ВТ 3-1, ОТ-4.
+                                            НЕ ЛОМ! Металл в хорошем состоянии! Можно перепродавать как изделие! По запросу скину список и фото. Только наличные или перевод на карту. Частник. Москва. Отправляю в регионы. Так же есть бронза, медь, латунь.
+                                        </p>
+                                        <ul class="card-ads__list">
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                                                </svg>
+                                                <span>Город:</span>
+                                                <span>Брянск</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#calendar_days_blue"></use>
+                                                </svg>
+                                                <span>Сроки готовности:</span>
+                                                <span>После оценки</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_box_blue"></use>
+                                                </svg>
+                                                <span>Объем:</span>
+                                                <span>1500 т</span>
+                                            </li>
+                                            <li class="card-ads__list-item">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#mingcute_coin_blue"></use>
+                                                </svg>
+                                                <span>Цена:</span>
+                                                <span>По запросу</span>
+                                            </li>
+                                        </ul>
+                                        <span class="card-ads__bottom-text">Александр</span>
+                                    </div>
+                                    <div class="card-ads__col">
+                                        <div class="card-ads__date">12 марта 2022</div>
+                                        <a href="tel:88121234567" class="card-ads__btn btn">Связаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

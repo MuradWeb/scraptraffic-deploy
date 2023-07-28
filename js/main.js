@@ -1,6 +1,135 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/modules/accordion/accordion.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/modules/accordion/accordion.js ***!
+  \***************************************************/
+/***/ (() => {
+
+$(function () {
+  var $accordionHead = $('.js-accordion-head');
+  if (!$accordionHead.length) return;
+  $accordionHead.on("click", function () {
+    var that = $(this);
+    var nextEl = that.next();
+    var nextHeight = nextEl[0].scrollHeight;
+    that.toggleClass("accordion__head_active");
+    if (that.hasClass("accordion__head_active")) {
+      return nextEl.css({
+        "max-height": nextHeight,
+        overflow: "visible",
+        opacity: 1,
+        "margin-top": 20
+      });
+    }
+    nextEl.css({
+      "max-height": 0,
+      overflow: "hidden",
+      opacity: 0,
+      "margin-top": 0
+    }).removeClass("accordion__content_open");
+  });
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/card-org/card-org.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/card-org/card-org.js ***!
+  \*************************************************/
+/***/ (() => {
+
+$(function () {
+  var $body = $('body');
+  var $priceList = $('.js-price-list');
+  var $priceLinks = $('.js-card-org-links');
+  var matchMedia = window.matchMedia('(max-width: 768px)');
+  $priceLinks.on('init:links', function (e) {
+    var target = $(e.target);
+    var listMore = target.find('.js-links-more');
+    var listLinks = target.find('.card-org__link');
+    var limitIndex = null;
+    var x = Array.from(listLinks).reduce(function (acc, tab, idx) {
+      var width = acc + +$(tab).outerWidth();
+      if (target.width() - 14 < width && !limitIndex) limitIndex = idx;else if (target.width() - 14 >= width) limitIndex = null;
+      return width;
+    }, 0);
+    if (limitIndex) {
+      listLinks.show();
+      listLinks.eq(matchMedia.matches ? limitIndex + 1 : limitIndex - 1).nextAll().not(listMore).hide();
+      listMore.removeAttr('hidden');
+      var handler = function handler() {
+        listLinks.removeAttr('style');
+        listMore.off('click', handler);
+        return listMore.remove();
+      };
+      listMore.on('click', handler);
+    } else {
+      listLinks.removeClass('card-org__link_hide');
+      listMore.remove();
+    }
+  });
+  $priceLinks.trigger('init:links');
+  $priceList.on('init:list', function (e) {
+    var target = $(e.target);
+    var list = target.find('.card-org__list');
+    var listLink = target.find('.card-org__list-link');
+    var listChildren = list.children();
+    if (listChildren.length > 3) {
+      listLink.removeAttr('hidden');
+      var handler = function handler() {
+        listChildren.css('display', 'flex');
+        listLink.off('click', handler);
+        return listLink.remove();
+      };
+      listLink.on('click', handler);
+    }
+  });
+  $priceList.trigger('init:list');
+  $body.on('click', '.js-map-show', function (e) {
+    var target = $(e.currentTarget);
+    var map = target.parents('.card-org').find('.js-card-org-map').fadeToggle().toggleClass('active');
+    if (map.hasClass('active')) {
+      map[0].scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+  $body.on('click', '.js-card-org-share', function (e) {
+    var target = $(e.currentTarget);
+    navigator.clipboard.writeText(target[0].dataset.link);
+    target.attr('data-tooltip', 'Скопировано');
+    setTimeout(function () {
+      target.attr('data-tooltip', 'Скопировать ссылку');
+    }, 3000);
+  });
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/cards/cards.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/cards/cards.js ***!
+  \*******************************************/
+/***/ (() => {
+
+$(function () {
+  var $cardsTab = $('.js-cards-tab');
+  var $cardsList = $('.js-cards-list');
+  $cardsTab.on('click', 'button.cards__tab-btn', function (e) {
+    var $that = $(e.target);
+    var filter = $that.data('filter');
+    $that.addClass('cards__tab-btn_active').siblings().removeClass('cards__tab-btn_active');
+    var $cards = $cardsList.find(".cards__card");
+    if (filter === 'all') return $cards.css('display', 'block');
+    $cards.not("[data-filter=\"".concat(filter, "\"]")).css('display', 'none');
+    $cards.filter("[data-filter=\"".concat(filter, "\"]")).css('display', 'block');
+  });
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/content-table/content-table.js":
 /*!***********************************************************!*\
   !*** ./src/blocks/modules/content-table/content-table.js ***!
@@ -138,7 +267,7 @@ $(function () {
       у нас происходит аякс запрос на фильтрацию с определенным параметром и возвращается контент, 
       после этого мы вставляем наш получаенный контент в элемент "js-ajax-content" 
       и запускаем триггер для реинициализации карточек материалов.
-        этот фрагмент желательно удалить на проде, и написать свою логику под ваши требования, 
+       этот фрагмент желательно удалить на проде, и написать свою логику под ваши требования, 
       т.к. это все лишь робочий пример. 
    */}
   $formReset.find('.js-select2').on('change', function () {
@@ -197,6 +326,36 @@ $(function () {
       }
     }]
   });
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/map/map.js":
+/*!***************************************!*\
+  !*** ./src/blocks/modules/map/map.js ***!
+  \***************************************/
+/***/ (() => {
+
+$(function () {
+  var $ymapsObj = $(".map");
+  if (!$ymapsObj.length) return;
+  var myMap = null;
+  ymaps.ready(init);
+  function init() {
+    $('.map__container').each(function (_, el) {
+      myMap = new ymaps.Map(el, {
+        center: [55.845698, 37.532700],
+        zoom: 12,
+        controls: ["zoomControl"]
+      });
+      var placeMark = new ymaps.Placemark([55.845698, 37.532700], {
+        balloonContent: 'Технолом'
+      }, {
+        preset: 'islands#redIcon'
+      });
+      myMap.geoObjects.add(placeMark);
+    });
+  }
 });
 
 /***/ }),
@@ -261,12 +420,27 @@ $(function () {
 /***/ (() => {
 
 $(function () {
+  var modalTabs = $('.js-tab-btn');
+  modalTabs.on('click', function (e) {
+    var target = $(e.currentTarget);
+    var tab = target.data('tab');
+    target.removeClass('btn_empty').siblings().addClass('btn_empty');
+    var content = $('.js-modal-content').find("[data-tab=\"".concat(tab, "\"]"));
+    content.css('display', 'block').siblings().css('display', 'none');
+  });
   var $jsFancy = $('.js-fancy');
   $jsFancy.on('click', function (e) {
+    e.preventDefault();
     Fancybox.show([{
-      src: e.currentTarget.dataset.src,
+      src: e.currentTarget.dataset.src || e.currentTarget.getAttribute('href'),
       type: "inline"
-    }]);
+    }], {
+      on: {
+        done: function done(fancybox, slide) {
+          $(fancybox.container).find('.js-card-org-links').trigger('init:links');
+        }
+      }
+    });
   });
 });
 
@@ -306,6 +480,44 @@ $(function () {
         }
       }]
     });
+  });
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/price/price.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/price/price.js ***!
+  \*******************************************/
+/***/ (() => {
+
+$(function () {
+  var $anchor = $('.js-anchor');
+  var $accordionHead = $('.js-price-info-head');
+  $anchor.on('click', function (e) {
+    e.preventDefault();
+    var an = e.currentTarget.getAttribute('href');
+    document.querySelector("".concat(an)).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+  $accordionHead.on("click", function () {
+    var that = $(this);
+    var nextEl = that.next();
+    var nextHeight = nextEl[0].scrollHeight;
+    that.toggleClass("price__info-head_active");
+    if (that.hasClass("price__info-head_active")) {
+      return nextEl.css({
+        "max-height": nextHeight,
+        overflow: "visible",
+        opacity: 1
+      });
+    }
+    nextEl.css({
+      "max-height": 0,
+      overflow: "hidden",
+      opacity: 0
+    }).removeClass("price__info-head_open");
   });
 });
 
@@ -509,10 +721,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_product_content_product_content__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_product_content_product_content__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _modules_similar_products_similar_products__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/similar-products/similar-products */ "./src/blocks/modules/similar-products/similar-products.js");
 /* harmony import */ var _modules_similar_products_similar_products__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_similar_products_similar_products__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
-/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_modal__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_map_map__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/map/map */ "./src/blocks/modules/map/map.js");
+/* harmony import */ var _modules_map_map__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_map_map__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_accordion_accordion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/accordion/accordion */ "./src/blocks/modules/accordion/accordion.js");
+/* harmony import */ var _modules_accordion_accordion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion_accordion__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_price_price__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/price/price */ "./src/blocks/modules/price/price.js");
+/* harmony import */ var _modules_price_price__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_price_price__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_cards_cards__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/cards/cards */ "./src/blocks/modules/cards/cards.js");
+/* harmony import */ var _modules_cards_cards__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_cards_cards__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_card_org_card_org__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/card-org/card-org */ "./src/blocks/modules/card-org/card-org.js");
+/* harmony import */ var _modules_card_org_card_org__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_card_org_card_org__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_modal__WEBPACK_IMPORTED_MODULE_13__);
 // import "%modules%/header/header";
 // import "%modules%/footer/footer";
+
+
+
+
+
 
 
 

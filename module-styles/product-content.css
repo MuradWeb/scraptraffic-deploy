@@ -1,6 +1,9 @@
 .product-content {
   padding: 30px 0 40px
 }
+.product-content.product-content_second {
+  padding: 60px 0 120px
+}
 .product-content__tab {
   display: flex;
   align-items: center;
@@ -96,7 +99,8 @@
   margin-bottom: 10px;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between
+  justify-content: space-between;
+  list-style-type: disc
 }
 .product-content__chapters ul li span {
   margin-left: 10px
@@ -146,6 +150,11 @@
   flex-direction: column;
   list-style-position: inside
 }
+.product-content__main ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 24px
+}
 .product-content__main ol li {
   font-size: 16px;
   line-height: 130%;
@@ -161,8 +170,14 @@
   .product-content__main {
     margin-right: 24px
   }
+  .product-content__main_second {
+    margin-right: 0
+  }
 }
 @media (max-width:1024px) {
+  .product-content.product-content_second {
+    padding: 30px 0 60px
+  }
   .product-content__reviews-row {
     margin: -10px
   }

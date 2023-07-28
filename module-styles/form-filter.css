@@ -63,9 +63,42 @@
   flex-wrap: wrap;
   margin: -5px
 }
+.form-filter__row_second {
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: -8px
+}
 .form-filter__label {
+  position: relative;
   margin: 5px;
   width: calc(25% - 10px)
+}
+.form-filter__search {
+  width: 100%;
+  border: 1px solid #e2e3e5;
+  border-radius: 8px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  transition: border-color .3s linear;
+  padding: 0 20px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 130%;
+  font-family: Commissioner,sans-serif;
+  color: #868686
+}
+.form-filter__search:hover {
+  border-color: #30b4ff
+}
+.form-filter__icon {
+  position: absolute;
+  top: 12px;
+  right: 12px
+}
+.form-filter__icon svg {
+  width: 24px;
+  height: 24px
 }
 @media (min-width:441px) {
   .form-filter__arrow,

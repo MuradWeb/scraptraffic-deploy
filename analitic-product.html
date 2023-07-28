@@ -109,12 +109,12 @@
                                 </a>
                             </div>
                             <div class="analysis__bottom">
-                                <a href="#" class="analysis__content">
+                                <button class="analysis__content js-fancy" data-src="#tab-modal">
                                     <svg>
                                         <use xlink:href="./img/sprites/sprite.svg#list_icon"></use>
                                     </svg>
                                     <span>Содержание</span>
-                                </a>
+                                </button>
                                 <span class="analysis__price">60 000 руб.</span>
                                 <button class="analysis__order-btn btn btn_blue">Оформить заказ</button>
                             </div>
@@ -440,6 +440,75 @@
                 </div>
             </div>
         </section>
+        <div class="modal modal_tab" id="tab-modal">
+            <div class="modal__container">
+                <button data-fancybox-close="" class="f-button f-button_custom is-close-btn" title="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                        <path d="M20 20L4 4m16 0L4 20" />
+                    </svg>
+                </button>
+                <div class="modal__box">
+                    <div class="modal__box-title">Подробное содержание <br>продукта</div>
+                    <div class="modal__over">
+                        <div class="modal__tab">
+                            <button class="btn modal__tab-btn js-tab-btn" data-tab="chapter">Оглавление</button>
+                            <button class="btn btn_empty modal__tab-btn js-tab-btn" data-tab="table">Таблицы</button>
+                            <button class="btn btn_empty modal__tab-btn js-tab-btn" data-tab="diagram">Диаграммы</button>
+                        </div>
+                        <div class="modal__box-content js-modal-content">
+                            <div class="modal__box-chapter" data-tab="chapter">
+                                <ul>
+                                    <li>Список таблиц и диаграмм <span>9</span></li>
+                                    <li>Таблицы <span>9</span></li>
+                                    <li>Диаграммы <span>9</span></li>
+                                    <li>Резюме <span>11</span></li>
+                                </ul>
+                                <div class="modal__box-chapter-title">
+                                    <span>Глава 1. Методология исследования</span>
+                                    <span>13</span>
+                                </div>
+                                <ul>
+                                    <li>§1.1. Объект исследования <span>14</span></li>
+                                    <li>§1.2. Цель исследования <span>15</span></li>
+                                    <li>§1.3. Задачи исследования <span>15</span></li>
+                                    <li>§1.4. Метод сбора и анализа данных <span>16</span></li>
+                                    <li>§1.5. Источники получения информации <span>17</span></li>
+                                    <li>§1.6. Объем и структура выборки <span>18</span></li>
+                                </ul>
+                                <div class="modal__box-chapter-title">
+                                    <span>Глава 2. Классификация и основные характеристики теллура</span>
+                                    <span>19</span>
+                                </div>
+                                <ul>
+                                    <li>§2.1. Описание<span>20</span></li>
+                                    <li>§2.2. Запасы <span>20</span></li>
+                                    <li>§2.3. Получение <span>20</span></li>
+                                </ul>
+                            </div>
+                            <div class="modal__box-table" data-tab="table" hidden>
+                                <ul>
+                                    <li>Таблица 1. Запасы на месторождениях теллура, т.</li>
+                                    <li>Таблица 2. Объем импорта, экспорта, производства и рынка теллура в России, кг.</li>
+                                    <li>Таблица 3. Объем импорта, экспорта, производства и рынка теллура в России, $.</li>
+                                    <li>Таблица 4. Объем импорта, экспорта, производства и рынка теллура в России по производителям, кг.</li>
+                                    <li>Таблица 5. Объем импорта, экспорта, производства и рынка теллура в России по производителям, $.</li>
+                                    <li>Таблица 6. Объем производства теллура в России, кг.</li>
+                                    <li>Таблица 7. Объем производства теллура в России, $.</li>
+                                    <li>Таблица 8. Объем производства теллура в России по субъектам федерации, кг.</li>
+                                    <li>Таблица 9. Объем производства теллура в России по субъектам федерации, $.</li>
+                                    <li>Таблица 10. Объем производства теллура в России по производителям, кг.</li>
+                                    <li>Таблица 11. Объем производства теллура в России по производителям, $.</li>
+                                    <li>Таблица 12. Объем импорта теллура в Россию, кг.</li>
+                                    <li>Таблица 13. Объем импорта теллура в Россию, $.</li>
+                                    <li>Таблица 14. Объем импорта теллура в Россию по производителям, кг.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -449,10 +518,12 @@
     <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+
     <script src="./libs/jquery-3.7.0.min.js"></script>
     <script src="./libs/select2/select2.min.js"></script>
     <script src="./libs/slick-1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
 
 
     <!-- <script src="js/vendor.js"></script> -->

@@ -1,0 +1,208 @@
+.card-ads {
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e2e3e5
+}
+.card-ads__category {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #2eb625;
+  background-color: #e0f8de;
+  border-color: transparent
+}
+.card-ads__flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between
+}
+.card-ads__col {
+  display: flex;
+  flex-direction: column
+}
+.card-ads__col:first-of-type {
+  width: 100%;
+  max-width: 954px;
+  margin-right: auto
+}
+.card-ads__col:last-of-type {
+  align-items: flex-end;
+  margin-left: 30px
+}
+.card-ads__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px 20px
+}
+.card-ads__row-item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 8px 12px;
+  color: #404040;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: .24px;
+  border-radius: 6px;
+  border: 1px solid #e2e3e5;
+  position: relative
+}
+.card-ads__row-item:hover::after,
+.card-ads__row-item:hover::before {
+  opacity: 1;
+  visibility: visible
+}
+.card-ads__row-item[data-tooltip]::before {
+  content: attr(data-tooltip)
+}
+.card-ads__row-item[data-tooltip]::after {
+  content: ""
+}
+.card-ads__row-item::after,
+.card-ads__row-item::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s linear;
+  font-size: 12px
+}
+.card-ads__row-item::before {
+  background-color: rgba(0,0,0,.8);
+  border-radius: .5em;
+  padding: .5rem;
+  transform: translate(-50%,calc(-100% - 12px))
+}
+.card-ads__row-item::after {
+  width: 12px;
+  aspect-ratio: 1;
+  background-color: rgba(0,0,0,.8);
+  -webkit-clip-path: polygon(44% 100%,0 44%,100% 44%);
+  clip-path: polygon(44% 100%,0 44%,100% 44%);
+  transform: translate(-50%,calc(-100% - 6px))
+}
+.card-ads__row-item::before {
+  white-space: nowrap;
+  text-align: center;
+  width: auto
+}
+.card-ads__row-item_green {
+  color: #2eb625;
+  background-color: #e0f8de;
+  border-color: transparent
+}
+.card-ads__row-item_orange {
+  color: #ffae30;
+  background: #fff3e0;
+  border-color: transparent
+}
+.card-ads__row-item svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px
+}
+.card-ads__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: .48px
+}
+.card-ads__text {
+  color: #494949;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 16px 0 20px
+}
+.card-ads__more {
+  display: inline-flex;
+  align-items: center;
+  transition: text-decoration .3s linear;
+  transition: text-decoration .3s linear,-webkit-text-decoration .3s linear
+}
+.card-ads__more:hover {
+  text-decoration: underline
+}
+.card-ads__more svg {
+  width: 18px;
+  height: 18px
+}
+.card-ads__list {
+  display: none;
+  margin-bottom: 20px
+}
+.card-ads__list-item {
+  display: flex;
+  align-items: center
+}
+.card-ads__list-item:not(:last-of-type) {
+  margin-bottom: 12px
+}
+.card-ads__list-item svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px
+}
+.card-ads__list-item span {
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: .28px
+}
+.card-ads__list-item span:first-of-type {
+  color: #868686;
+  margin-right: 8px
+}
+.card-ads__bottom-text {
+  color: #494949;
+  font-size: 12px;
+  line-height: 130%
+}
+.card-ads__date {
+  color: #868686;
+  font-size: 12px;
+  line-height: 130%
+}
+.card-ads__btn {
+  margin-top: auto;
+  padding: 12px 20px
+}
+@media (max-width:1024px) {
+  .card-ads {
+    padding: 20px;
+    border-radius: 10px
+  }
+}
+@media (max-width:768px) {
+  .card-ads__row {
+    margin: 0 0 20px
+  }
+  .card-ads__row-item {
+    margin: 0
+  }
+  .card-ads__row-item:not(:first-of-type) {
+    display: none
+  }
+  .card-ads__title {
+    font-size: 20px
+  }
+  .card-ads__list {
+    display: block
+  }
+}
+@media (max-width:479px) {
+  .card-ads__flex {
+    flex-direction: column;
+    position: relative
+  }
+  .card-ads__col:last-of-type {
+    align-items: stretch;
+    margin: 20px 0 0
+  }
+  .card-ads__date {
+    position: absolute;
+    top: 0;
+    right: 0
+  }
+}

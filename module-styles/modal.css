@@ -24,6 +24,93 @@
   max-width: 836px;
   margin: 0 auto
 }
+.modal_tab {
+  width: 100%
+}
+.modal_tab .modal__container {
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto
+}
+.modal_cards .modal__container {
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto
+}
+.modal_cards .card-org__links-row {
+  margin: -4px
+}
+.modal_cards .card-org__links-row .card-org__link {
+  margin: 4px
+}
+.modal__box-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: .48px;
+  margin-bottom: 40px
+}
+.modal__box-title br {
+  display: none
+}
+.modal__tab {
+  position: relative;
+  display: flex;
+  margin-bottom: 24px
+}
+.modal__tab-btn {
+  padding: 12px 15px
+}
+.modal__tab-btn:not(:last-of-type) {
+  margin-right: 15px
+}
+.modal__tab-btn.btn.btn_empty {
+  color: #404040;
+  border: 1px solid #30b4ff
+}
+.modal__box-chapter ul:not(:first-of-type) {
+  padding-left: 20px
+}
+.modal__box-chapter ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 12px
+}
+.modal__box-chapter ul li span {
+  margin-left: 10px
+}
+.modal__box-chapter-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #494949;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 12px
+}
+.modal__box-chapter-title span:nth-of-type(2) {
+  margin-left: 10px
+}
+.modal__box-table ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 12px
+}
+.modal__box-table ul li span {
+  margin-left: 10px
+}
 .modal__container {
   padding: 60px;
   background-color: #fff;
@@ -85,11 +172,22 @@
   font-size: 12px
 }
 @media (max-width:1024px) {
+  .modal_cards .modal__container {
+    border-radius: 10px;
+    padding: 20px
+  }
   .modal__container {
     padding: 40px
   }
 }
 @media (max-width:768px) {
+  .modal_tab .modal__container {
+    padding: 20px;
+    border-radius: 10px
+  }
+  .modal__box-title {
+    font-size: 20px
+  }
   .modal__container {
     padding: 20px
   }
@@ -134,5 +232,15 @@
   .modal .f-button.f-button_custom {
     top: 10px;
     right: 10px
+  }
+}
+@media (max-width:479px) {
+  .modal__box-title br {
+    display: block
+  }
+}
+@media (max-width:450px) {
+  .modal__tab {
+    overflow-x: auto
   }
 }

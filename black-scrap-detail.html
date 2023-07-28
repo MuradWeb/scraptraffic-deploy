@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Материалы</a>
+                </li>
+                <li class="breadcrumbs__item">Черный лом</li>
+            </ul>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h1 class="section__title section__title_second">Прием лома черных металлов в Москве</h1>
+                    <div class="section__head-right section__head-right_first">
+                        <a class="section__link">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                            </svg>
+                            <span>Выбрать другой город</span>
+                        </a>
+                        <a class="section__link">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                            </svg>
+                            <span>Поделиться</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="price__flex">
+                        <div class="price__col">
+                            <div class="price__head">
+                                <div class="price__top">
+                                    <div class="price__top-title">Цена на лом чёрных металлов в Москве</div>
+                                    <span class="price__top-numb">11 000 руб./кг</span>
+                                </div>
+                                <p class="price__head-text">* При безналичной оплате стоимость увеличивается до 12%</p>
+                            </div>
+                            <div class="price__company">
+                                <div class="price__company-item" data-tooltip="Официальный партнёр">
+                                    <div class="price__company-title">ООО "ТехноЛом"</div>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                    </svg>
+                                </div>
+                                <div class="price__company-item">
+                                    <div class="price__company-icon" data-tooltip="Информация">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#bi_info-circle"></use>
+                                        </svg>
+                                    </div>
+                                    <button class="price__company-btn js-anchor">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                        </svg>
+                                        <span>На карте</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="price__info price__info_second">
+                                <div class="price__info-col price__info-col_second">
+                                    <div class="price__info-top price__info-top_second">
+                                        <div class="price__info-text">Телефон в Москве</div>
+                                        <div class="price__info-row">
+                                            <a href="tel:8 812 123-45-67" class="price__info-tel price__info-tel_blue">8 812 123-45-67</a>
+                                            <div class="price__info-media price__info-media_first">
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price__info-bottom">
+                                        <div class="price__info-head js-price-info-head">
+                                            <div class="price__info-head-text">Дополнительные номера</div>
+                                            <div class="price__info-head-icon">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="price__info-content">
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__info-col">
+                                    <div class="price__info-icon">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#support"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="price__info-support">
+                                        <div class="price__info-support-row">
+                                            <div class="price__info-support-text">Тех. поддержка</div>
+                                            <span class="price__info-support-icon" data-tooltip="Информация">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <a href="tel:8 800 234-83-13" class="price__info-support-tel">8 800 234-83-13</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__bottom">
+                                <button class="price__bottom-btn btn">Отправьте фото и уточните цену</button>
+                                <div class="price__bottom-opinion">
+                                    <div class="price__bottom-left">
+                                        <span class="price__bottom-icon" data-tooltip="Информация">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="price__bottom-text">Ваше мнение о цене:</span>
+                                    </div>
+                                    <div class="price__bottom-right">
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#dislike"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__col">
+                            <div class="also">
+                                <div class="also__title">Вы также можете посмотреть:</div>
+                                <ul class="also__list">
+                                    <li class="also__item">
+                                        <span class="also__item-text">Черный металл</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Медь</span>
+                                        <span class="also__item-numb">до 570 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Алюминий</span>
+                                        <span class="also__item-numb">до 560 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Свинец</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Черный металл</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Медь</span>
+                                        <span class="also__item-numb">до 570 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Алюминий</span>
+                                        <span class="also__item-numb">до 560 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Свинец</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn_empty also__btn">Все цены в Москве</button>
+                            </div>
+
+                            <div class="services">
+                                <div class="services__wrap">
+                                    <div class="services__content">
+                                        <div class="services__title">Услуги демонтажа <br> и сноса металлов</div>
+                                        <a href="#" class="services__link">
+                                            <span>Перейти</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="services__img">
+                                        <picture>
+                                            <img src="./img/content/services/img_1.png" alt="" loading="lazy" width="536" height="140">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="price__flex">
+                        <div class="price__col">
+                            <div class="price__head">
+                                <div class="price__top">
+                                    <div class="price__top-title">Цена на лом чёрных металлов в Москве</div>
+                                    <span class="price__top-numb">11 000 руб./кг</span>
+                                </div>
+                                <p class="price__head-text">* При безналичной оплате стоимость увеличивается до 12%</p>
+                            </div>
+                            <div class="price__alert" data-tooltip="Информация">
+                                <span>Свободно для аренды</span>
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#info-circle"></use>
+                                </svg>
+                            </div>
+                            <div class="price__info price__info_second">
+                                <div class="price__info-col price__info-col_second">
+                                    <div class="price__info-top  price__info-top_second">
+                                        <div class="price__info-text">Телефон в Москве</div>
+                                        <div class="price__info-row">
+                                            <a href="tel:8 812 123-45-67" class="price__info-tel price__info-tel_blue">8 812 123-45-67</a>
+                                            <div class="price__info-media price__info-media_first">
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price__info-bottom">
+                                        <div class="price__info-head js-price-info-head">
+                                            <div class="price__info-head-text">Дополнительные номера</div>
+                                            <div class="price__info-head-icon">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="price__info-content">
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__info-col">
+                                    <div class="price__info-icon">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#support"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="price__info-support">
+                                        <div class="price__info-support-row">
+                                            <div class="price__info-support-text">Тех. поддержка</div>
+                                            <span class="price__info-support-icon" data-tooltip="Информация">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <a href="tel:8 800 234-83-13" class="price__info-support-tel">8 800 234-83-13</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__bottom">
+                                <button class="price__bottom-btn btn">Отправьте фото и уточните цену</button>
+                                <div class="price__bottom-opinion">
+                                    <div class="price__bottom-left">
+                                        <span class="price__bottom-icon" data-tooltip="Информация">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="price__bottom-text">Ваше мнение о цене:</span>
+                                    </div>
+                                    <div class="price__bottom-right">
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#dislike"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__col">
+                            <div class="also">
+                                <div class="also__title">Вы также можете посмотреть:</div>
+                                <ul class="also__list">
+                                    <li class="also__item">
+                                        <span class="also__item-text">Черный металл</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Медь</span>
+                                        <span class="also__item-numb">до 570 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Алюминий</span>
+                                        <span class="also__item-numb">до 560 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Свинец</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Черный металл</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Медь</span>
+                                        <span class="also__item-numb">до 570 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Алюминий</span>
+                                        <span class="also__item-numb">до 560 руб./кг</span>
+                                    </li>
+                                    <li class="also__item">
+                                        <span class="also__item-text">Свинец</span>
+                                        <span class="also__item-numb">до 20 руб./кг</span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn_empty also__btn">Все цены в Москве</button>
+                            </div>
+
+                            <div class="services">
+                                <div class="services__wrap">
+                                    <div class="services__content">
+                                        <div class="services__title">Услуги демонтажа <br> и сноса металлов</div>
+                                        <a href="#" class="services__link">
+                                            <span>Перейти</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="services__img">
+                                        <picture>
+                                            <img src="./img/content/services/img_1.png" alt="" loading="lazy" width="536" height="140">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modal_tab" id="tab-modal">
+                    <div class="modal__container">
+                        <button data-fancybox-close="" class="f-button f-button_custom is-close-btn" title="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                                <path d="M20 20L4 4m16 0L4 20" />
+                            </svg>
+                        </button>
+                        <div class="modal__box">
+                            <div class="modal__box-title">Подробное содержание <br>продукта</div>
+                            <div class="modal__over">
+                                <div class="modal__tab">
+                                    <button class="btn modal__tab-btn js-tab-btn" data-tab="chapter">Оглавление</button>
+                                    <button class="btn btn_empty modal__tab-btn js-tab-btn" data-tab="table">Таблицы</button>
+                                    <button class="btn btn_empty modal__tab-btn js-tab-btn" data-tab="diagram">Диаграммы</button>
+                                </div>
+                                <div class="modal__box-content js-modal-content">
+                                    <div class="modal__box-chapter" data-tab="chapter">
+                                        <ul>
+                                            <li>Список таблиц и диаграмм <span>9</span></li>
+                                            <li>Таблицы <span>9</span></li>
+                                            <li>Диаграммы <span>9</span></li>
+                                            <li>Резюме <span>11</span></li>
+                                        </ul>
+                                        <div class="modal__box-chapter-title">
+                                            <span>Глава 1. Методология исследования</span>
+                                            <span>13</span>
+                                        </div>
+                                        <ul>
+                                            <li>§1.1. Объект исследования <span>14</span></li>
+                                            <li>§1.2. Цель исследования <span>15</span></li>
+                                            <li>§1.3. Задачи исследования <span>15</span></li>
+                                            <li>§1.4. Метод сбора и анализа данных <span>16</span></li>
+                                            <li>§1.5. Источники получения информации <span>17</span></li>
+                                            <li>§1.6. Объем и структура выборки <span>18</span></li>
+                                        </ul>
+                                        <div class="modal__box-chapter-title">
+                                            <span>Глава 2. Классификация и основные характеристики теллура</span>
+                                            <span>19</span>
+                                        </div>
+                                        <ul>
+                                            <li>§2.1. Описание<span>20</span></li>
+                                            <li>§2.2. Запасы <span>20</span></li>
+                                            <li>§2.3. Получение <span>20</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal__box-table" data-tab="table" hidden>
+                                        <ul>
+                                            <li>Таблица 1. Запасы на месторождениях теллура, т.</li>
+                                            <li>Таблица 2. Объем импорта, экспорта, производства и рынка теллура в России, кг.</li>
+                                            <li>Таблица 3. Объем импорта, экспорта, производства и рынка теллура в России, $.</li>
+                                            <li>Таблица 4. Объем импорта, экспорта, производства и рынка теллура в России по производителям, кг.</li>
+                                            <li>Таблица 5. Объем импорта, экспорта, производства и рынка теллура в России по производителям, $.</li>
+                                            <li>Таблица 6. Объем производства теллура в России, кг.</li>
+                                            <li>Таблица 7. Объем производства теллура в России, $.</li>
+                                            <li>Таблица 8. Объем производства теллура в России по субъектам федерации, кг.</li>
+                                            <li>Таблица 9. Объем производства теллура в России по субъектам федерации, $.</li>
+                                            <li>Таблица 10. Объем производства теллура в России по производителям, кг.</li>
+                                            <li>Таблица 11. Объем производства теллура в России по производителям, $.</li>
+                                            <li>Таблица 12. Объем импорта теллура в Россию, кг.</li>
+                                            <li>Таблица 13. Объем импорта теллура в Россию, $.</li>
+                                            <li>Таблица 14. Объем импорта теллура в Россию по производителям, кг.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="modal modal_cards" id="cards-modal">
+                    <div class="modal__container">
+                        <button data-fancybox-close="" class="f-button f-button_custom is-close-btn" title="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                                <path d="M20 20L4 4m16 0L4 20" />
+                            </svg>
+                        </button>
+                        <div class="filter-stock">
+                            <div class="filter-stock__title filter-stock__title_modal">Пункты приема в городе <br><span>Москва (4)</span>:</div>
+                            <form action="" class="filter-stock__form">
+                                <div class="filter-stock__row filter-stock__row_second">
+                                    <label class="filter-stock__label">
+                                        <select name="scrap-metal" data-placeholder="Выберите металлолом" class="select js-select2 filter-stock__select">
+                                            <option></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </label>
+                                    <label class="filter-stock__label">
+                                        <select name="service" data-placeholder="Выберите услугу" class="select js-select2 filter-stock__select">
+                                            <option></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="cards cards_pb">
+                            <div class="cards__wrap cards__wrap_second">
+                                <div class="card-org cards__card">
+                                    <div class="map card-org__map js-card-org-map">
+                                        <div class="map__container"></div>
+                                        <a href="#" target="_blank" class="btn map__btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#routing_white"></use>
+                                            </svg>
+                                            <span>Показать маршрут</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="card-org__flex">
+                                        <div class="card-org__col">
+                                            <div class="card-org__head">
+                                                <div class="card-org__head-title" data-tooltip="Официальный партнёр">
+                                                    <span>ООО "ТехноЛом"</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                                    </svg>
+                                                </div>
+                                                <button class="card-org__head-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                    </svg>
+                                                    <span>Поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-org__address">
+                                                <div class="card-org__address-item" data-tooltip="Время работы:">
+                                                    <span>2-й Лихачёвский переулок, 7с11</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#clock_green"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card-org__address-item">
+                                                    <span>Улица Ахтямова, 28</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#clock_red"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__info">
+                                                <div class="card-org__info-text">Телефон в Москве</div>
+                                                <div class="card-org__info-row">
+                                                    <a href="tel:8 812 123-45-67" class="card-org__info-tel">8 812 123-45-67 </a>
+                                                    <a href="#" class="card-org__media" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__bottom">
+                                                <button class="btn btn_empty card-org__bottom-btn js-map-show">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                                    </svg>
+                                                    <span>Показать на карте</span>
+                                                </button>
+                                                <a href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10" target="_blank" class="btn btn_empty card-org__bottom-btn">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#routing"></use>
+                                                    </svg>
+                                                    <span>Показать маршрут</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-org__col">
+                                            <div class="card-org__price js-price-list">
+                                                <div class="card-org__list-title">Цены на металлолом</div>
+                                                <ul class="card-org__list ">
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Черный металл</span>
+                                                        <span class="card-org__list-numb">до 20 руб./кг</span>
+                                                    </li>
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Медь</span>
+                                                        <span class="card-org__list-numb">до 570 руб./кг</span>
+                                                    </li>
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Алюминий</span>
+                                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                                    </li>
+
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Алюминий</span>
+                                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                                    </li>
+                                                </ul>
+                                                <button class="card-org__list-link" hidden>
+                                                    <span>Больше металлов</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="card-org__links">
+                                                <div class="card-org__links-title">Услуги демонтажа</div>
+                                                <div class="card-org__links-row js-card-org-links">
+                                                    <a href="#" class="card-org__link">Металлические каркасы, конструкции</a>
+                                                    <a href="#" class="card-org__link">Лифты</a>
+                                                    <a href="#" class="card-org__link">Котельные</a>
+                                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                                    <button class="card-org__link js-links-more" hidden>...</button>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn_empty card-org__col-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                </svg>
+                                                <span>Поделиться</span>
+                                            </button>
+                                            <button class="btn card-org__col-btn js-map-show">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_white"></use>
+                                                </svg>
+                                                <span>Показать на карте</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-org cards__card">
+                                    <div class="map card-org__map js-card-org-map">
+                                        <div class="map__container"></div>
+                                        <a href="#" target="_blank" class="btn map__btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#routing_white"></use>
+                                            </svg>
+                                            <span>Показать маршрут</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="card-org__flex">
+                                        <div class="card-org__col">
+                                            <div class="card-org__head">
+                                                <div class="card-org__head-title" data-tooltip="Официальный партнёр">
+                                                    <span>ООО «Урал-Олово»</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                                    </svg>
+                                                </div>
+                                                <button class="card-org__head-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                    </svg>
+                                                    <span>Поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-org__address">
+                                                <div class="card-org__address-item" data-tooltip="Время работы:">
+                                                    <span>Складская улица, 2</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#clock_green"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__info">
+                                                <div class="card-org__info-text">Телефон в Москве</div>
+                                                <div class="card-org__info-row">
+                                                    <a href="tel:8 812 123-45-67" class="card-org__info-tel">8 812 123-45-67 </a>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__bottom">
+                                                <button class="btn btn_empty card-org__bottom-btn js-map-show">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                                    </svg>
+                                                    <span>Показать на карте</span>
+                                                </button>
+                                                <a href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10" target="_blank" class="btn btn_empty card-org__bottom-btn">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#routing"></use>
+                                                    </svg>
+                                                    <span>Показать маршрут</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-org__col">
+                                            <div class="card-org__price js-price-list">
+                                                <div class="card-org__list-title">Цены на металлолом</div>
+                                                <ul class="card-org__list ">
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Черный металл</span>
+                                                        <span class="card-org__list-numb">до 20 руб./кг</span>
+                                                    </li>
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Медь</span>
+                                                        <span class="card-org__list-numb">до 570 руб./кг</span>
+                                                    </li>
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Алюминий</span>
+                                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                                    </li>
+
+                                                    <li class="card-org__list-item">
+                                                        <span class="card-org__list-text">Алюминий</span>
+                                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                                    </li>
+                                                </ul>
+                                                <button class="card-org__list-link" hidden>
+                                                    <span>Больше металлов</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="card-org__links">
+                                                <div class="card-org__links-title">Услуги демонтажа</div>
+                                                <div class="card-org__links-row js-card-org-links">
+                                                    <a href="#" class="card-org__link">Металлические каркасы, конструкции</a>
+                                                    <a href="#" class="card-org__link">Лифты</a>
+                                                    <a href="#" class="card-org__link">Котельные</a>
+                                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                                    <button class="card-org__link js-links-more" hidden>...</button>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn_empty card-org__col-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                </svg>
+                                                <span>Поделиться</span>
+                                            </button>
+                                            <button class="btn card-org__col-btn js-map-show">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_white"></use>
+                                                </svg>
+                                                <span>Показать на карте</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-org card-org_border-grey cards__card">
+                                    <div class="map card-org__map js-card-org-map">
+                                        <div class="map__container"></div>
+                                        <a href="#" target="_blank" class="btn map__btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#routing_white"></use>
+                                            </svg>
+                                            <span>Показать маршрут</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="card-org__flex">
+                                        <div class="card-org__col">
+                                            <div class="card-org__head">
+                                                <div class="card-org__head-title">
+                                                    <span>Металлист</span>
+                                                </div>
+                                                <button class="card-org__head-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                    </svg>
+                                                    <span>Поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-org__address">
+                                                <div class="card-org__address-item">
+                                                    <span>Складская улица, 2</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#clock_green"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__info">
+                                                <div class="card-org__info-text">Телефон в Москве</div>
+                                                <div class="card-org__info-row">
+                                                    <a href="tel:8 812 123-45-67" class="card-org__info-tel">8 812 123-45-67 </a>
+                                                    <a href="#" class="card-org__media" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__bottom">
+                                                <button class="btn btn_empty card-org__bottom-btn js-map-show">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                                    </svg>
+                                                    <span>Показать на карте</span>
+                                                </button>
+                                                <a href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10" target="_blank" class="btn btn_empty card-org__bottom-btn">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#routing"></use>
+                                                    </svg>
+                                                    <span>Показать маршрут</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-org__col">
+                                            <ul class="card-org__list">
+                                                <li class="card-org__list-title">Цены на металлолом</li>
+                                                <li class="card-org__list-item">
+                                                    <span class="card-org__list-text card-org__list-text_dark">Баббит</span>
+                                                    <span class="card-org__list-numb">до 20 руб./кг</span>
+                                                </li>
+                                                <li class="card-org__list-item">
+                                                    <span class="card-org__list-text card-org__list-text_dark">Олово</span>
+                                                    <span class="card-org__list-numb">до 570 руб./кг</span>
+                                                </li>
+                                                <li class="card-org__list-item">
+                                                    <span class="card-org__list-text card-org__list-text_dark">Припой</span>
+                                                    <span class="card-org__list-numb">до 560 руб./кг</span>
+                                                </li>
+                                            </ul>
+                                            <div class="card-org__links">
+                                                <div class="card-org__links-title">Услуги демонтажа</div>
+                                                <div class="card-org__links-row card-org__links-row_dark">
+                                                    <a href="#" class="card-org__link">Котельные</a>
+                                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                                    <a href="#" class="card-org__link">...</a>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn_empty card-org__col-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                </svg>
+                                                <span>Поделиться</span>
+                                            </button>
+                                            <button class="btn card-org__col-btn js-map-show">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_white"></use>
+                                                </svg>
+                                                <span>Показать на карте</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-org card-org_border-grey cards__card">
+                                    <div class="map card-org__map js-card-org-map">
+                                        <div class="map__container"></div>
+                                        <a href="#" target="_blank" class="btn map__btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#routing_white"></use>
+                                            </svg>
+                                            <span>Показать маршрут</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="card-org__flex">
+                                        <div class="card-org__col">
+                                            <div class="card-org__head">
+                                                <div class="card-org__head-title">
+                                                    <span>ООО «Точка сбора»</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                                    </svg>
+                                                </div>
+                                                <button class="card-org__head-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                    </svg>
+                                                    <span>Поделиться</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-org__address">
+                                                <div class="card-org__address-item">
+                                                    <span>Улица Ахтямова, 28</span>
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#clock_red"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__info">
+                                                <div class="card-org__info-text">Телефон в Москве</div>
+                                                <div class="card-org__info-row">
+                                                    <a href="tel:8 812 123-45-67" class="card-org__info-tel">8 812 123-45-67 </a>
+                                                </div>
+                                            </div>
+                                            <div class="card-org__bottom">
+                                                <a href="#" class="btn btn_empty card-org__bottom-btn">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                                    </svg>
+                                                    <span>Показать на карте</span>
+                                                </a>
+                                                <a href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10" target="_blank" class="btn btn_empty card-org__bottom-btn">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#routing"></use>
+                                                    </svg>
+                                                    <span>Показать маршрут</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-org__col">
+                                            <ul class="card-org__list">
+                                                <li class="card-org__list-title">Цены на металлолом</li>
+                                                <li class="card-org__list-item">
+                                                    <span class="card-org__list-text card-org__list-text_dark">Баббит</span>
+                                                    <span class="card-org__list-numb">до 20 руб./кг</span>
+                                                </li>
+                                            </ul>
+                                            <button class="btn btn_empty card-org__col-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                                </svg>
+                                                <span>Поделиться</span>
+                                            </button>
+                                            <button class="btn card-org__col-btn js-map-show">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#map_white"></use>
+                                                </svg>
+                                                <span>Показать на карте</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

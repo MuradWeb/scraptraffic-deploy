@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Материалы</a>
+                </li>
+                <li class="breadcrumbs__item">Черный лом</li>
+            </ul>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h1 class="section__title">Демонтаж металлических каркасов, конструкций в Москве</h1>
+                    <div class="section__head-right section__head-right_second">
+                        <a href="#" class="section__link">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#pin_blue"></use>
+                            </svg>
+                            <span>Выбрать другой город</span>
+                        </a>
+                        <a href="#" class="section__link">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                            </svg>
+                            <span>Поделиться</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="price__flex">
+                        <div class="price__col">
+                            <div class="price__head">
+                                <div class="price__top">
+                                    <div class="price__top-title">Цена на демонтаж металлических <br>каркасов, конструкций в Москве</div>
+                                    <span class="price__top-numb">26 000 руб./т</span>
+                                </div>
+                                <p class="price__head-text">* При безналичной оплате стоимость увеличивается до 12%</p>
+                            </div>
+
+                            <div class="price__company">
+                                <div class="price__company-item" data-tooltip="Официальный партнёр">
+                                    <div class="price__company-title">ООО "ТехноЛом"</div>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                    </svg>
+                                </div>
+                                <div class="price__company-item">
+                                    <div class="price__company-icon" data-tooltip="Информация">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#bi_info-circle"></use>
+                                        </svg>
+                                    </div>
+                                    <button class="price__company-btn js-anchor">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                                        </svg>
+                                        <span>На карте</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="price__info">
+                                <div class="price__info-col">
+                                    <div class="price__info-top">
+                                        <div class="price__info-text">Телефон в Москве</div>
+                                        <div class="price__info-row">
+                                            <a href="tel:8 812 123-45-67" class="price__info-tel price__info-tel_blue">8 812 123-45-67</a>
+                                            <div class="price__info-media price__info-media_first">
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price__info-bottom">
+                                        <div class="price__info-head js-price-info-head">
+                                            <div class="price__info-head-text">Дополнительные номера</div>
+                                            <div class="price__info-head-icon">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="price__info-content">
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#viber"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                            </div>
+                                            <div class="price__info-row">
+                                                <a href="tel:8 812 123-45-67" class="price__info-tel">8 812 123-45-67</a>
+                                                <div class="price__info-media">
+                                                    <a href="#" target="_blank">
+                                                        <svg>
+                                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__info-col">
+                                    <div class="price__info-icon">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#support"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="price__info-support">
+                                        <div class="price__info-support-row">
+                                            <div class="price__info-support-text">Тех. поддержка</div>
+                                            <span class="price__info-support-icon" data-tooltip="Информация">
+                                                <svg>
+                                                    <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <a href="tel:8 800 234-83-13" class="price__info-support-tel">8 800 234-83-13</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__bottom">
+                                <button class="price__bottom-btn btn">Отправьте фото и уточните цену</button>
+                                <div class="price__bottom-opinion">
+                                    <div class="price__bottom-left">
+                                        <span class="price__bottom-icon" data-tooltip="Информация">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#info_circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="price__bottom-text">Ваше мнение о цене:</span>
+                                    </div>
+                                    <div class="price__bottom-right">
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#like"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="price__bottom-right-btn">
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#dislike"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__col">
+                            <div class="also">
+                                <div class="also__title">Вы также можете посмотреть услуги демонтажа:</div>
+                                <div class="also__row">
+                                    <a href="#" class="also__row-link">Металлические каркасы, конструкции</a>
+                                    <a href="#" class="also__row-link">Котельные</a>
+                                    <a href="#" class="also__row-link">Лифты</a>
+                                    <a href="#" class="also__row-link">Ангары, гаражи</a>
+                                    <a href="#" class="also__row-link">Здания дома</a>
+                                    <a href="#" class="also__row-link">Дымовые трубы</a>
+                                </div>
+                                <button class="also__btn btn btn_empty">Все цены в Москве</button>
+                            </div>
+
+                            <div class="services">
+                                <div class="services__wrap">
+                                    <div class="services__content">
+                                        <div class="services__title">Услуги приема металлолома <br> и утильсырья</div>
+                                        <a href="#" class="services__link">
+                                            <span>Перейти</span>
+                                            <svg>
+                                                <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="services__img">
+                                        <picture>
+                                            <img src="./img/content/services/img_2.png" alt="" loading="lazy" width="536" height="140">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="type">
+                    <div class="type__container">
+                        <div class="type__top type__top_second">
+                            <div class="type__title">Вид металлолома</div>
+                            <div class="type__title">Дополнительные услуги</div>
+                            <div class="type__title">Цена руб за тонну</div>
+                        </div>
+                        <div class="type__wrap type__wrap_second">
+                            <div class="type__item">
+                                <div class="type__col">
+                                    <span class="type__sort">Лом стали</span>
+                                </div>
+                                <div class="type__text">
+                                    Демонтаж, разбор конструкций, вывоз за наш счет
+                                </div>
+                                <div class="type__col">
+                                    <span class="type__price">26 500</span>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <div class="type__col">
+                                    <span class="type__sort">Лом чугуна</span>
+                                </div>
+                                <div class="type__text">
+                                    Разбор конструкций, вывоз за наш счет
+                                </div>
+                                <div class="type__col">
+                                    <span class="type__price">26 500</span>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <div class="type__col">
+                                    <span class="type__sort">Арматура</span>
+                                </div>
+                                <div class="type__text">
+                                    Погрузка, вывоз металла
+                                </div>
+                                <div class="type__col">
+                                    <span class="type__price">26 500</span>
+                                </div>
+                            </div>
+                            <div class="type__item">
+                                <div class="type__col">
+                                    <span class="type__sort">Оцинковка</span>
+                                </div>
+                                <div class="type__text">
+                                    Демонтаж, резка, вывоз бесплатно
+                                </div>
+                                <div class="type__col">
+                                    <span class="type__price">26 500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-content product-content_second">
+                    <div class="product-content__main product-content__main_second">
+                        <h2>Какой металлолом мы демонтируем</h2>
+                        <ol>
+                            <li>Черный металлолом;</li>
+                            <li>Цветной металлолом;</li>
+                            <li>Деловой металлолом;</li>
+                            <li>Промышленный металлолом;</li>
+                            <li>Жд металлолом;</li>
+                            <li>Старая спцтехника;</li>
+                            <li>Металлическое оборудование;</li>
+                            <li>Металлоконструкции;</li>
+                            <li>Металлические станки.</li>
+                        </ol>
+                        <h2>В каких случаях требуется разборка и приемка металлических конструкций?</h2>
+                        <p>
+                            Мы ведем разборку и приемку металлических конструкций, каркасов, предлагаем высокие расценки на металл для населения и предприятий. Демонтажные работы заказывают по таким причинам:
+                        </p>
+                        <ul>
+                            <li>моральный и физический износ металлоконструкции;</li>
+                            <li>плановый капитальный ремонт;</li>
+                            <li>восстановление после аварий;</li>
+                            <li>разборка для перемещения на другую рабочую площадь.</li>
+                        </ul>
+                        <p>
+                            Металлолом, образовавшийся после демонтажа, готовы купить для утилизации.
+                        </p>
+                        <h2>Разделка металлоконструкций</h2>
+                        <ol>
+                            <li>Бесплатный выезд на объект для составления сметы</li>
+                            <li>Совершениe сделки на снос металлоконструкций и расчет в день обращения</li>
+                            <li>Свой парк авто и спец. техники</li>
+                            <li> Работа по договору, безнал, НДС</li>
+                        </ol>
+
+                        <h2>Почему следует доверить нам резку, снос и демонтаж металлоконструкций?</h2>
+                        <p>
+                            Каждый заказ по демонтажным работам в «РедМет» планируем индивидуально.
+                            Учитываем все нюансы заказа для быстрого, успешного, аккуратного проведения демонтажа. Участок приводим в порядок, образовавшийся мусор, отходы вывозим на спецплощадку.
+                        </p>
+                        <p>
+                            Помогаем клиентам с вопросом вывоза, утилизации металлолома. Наши приемки работают круглосуточно, поэтому сдать лом Вы можете в любое удобное время.
+                            Пункты выкупа есть в каждом районе Москвы, Московской области.
+                        </p>
+                        <p>
+                            Требуется узнать расценки на услуги демонтажа, утилизации и вывоза металлоконструкций? Звоните менеджерам нашей компании или оставляйте заявку для обратного звонка.
+                            Наши консультанты предоставят полную информацию по любому вопросу.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-org">
+                    <div class="map" id="card-map">
+                        <div class="map__container"></div>
+                        <a href="#" target="_blank" class="btn map__btn">
+                            <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#routing_white"></use>
+                            </svg>
+                            <span>Показать маршрут</span>
+                        </a>
+                    </div>
+
+                    <div class="card-org__flex">
+                        <div class="card-org__col">
+                            <div class="card-org__head">
+                                <div class="card-org__head-title" data-tooltip="Официальный партнёр">
+                                    <span>ООО "ТехноЛом"</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#wavy_check"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-org__head-right">
+                                    <div class="card-org__head-info" data-tooltip="info">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#bi_info-circle"></use>
+                                        </svg>
+                                    </div>
+
+                                    <button class="card-org__head-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                        </svg>
+                                        <span>Поделиться</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-org__address">
+                                <div class="card-org__address-item" data-tooltip="Время работы:">
+                                    <span>2-й Лихачёвский переулок, 7с11</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#clock_green"></use>
+                                    </svg>
+                                </div>
+                                <div class="card-org__address-item">
+                                    <span>Улица Ахтямова, 28</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#clock_red"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-org__info">
+                                <div class="card-org__info-text">Телефон в Москве</div>
+                                <div class="card-org__info-row">
+                                    <a href="tel:8 812 123-45-67" class="card-org__info-tel">8 812 123-45-67 </a>
+                                    <a href="#" class="card-org__media" target="_blank">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-org__col">
+                            <div class="card-org__price js-price-list">
+                                <div class="card-org__list-title">Цены на металлолом</div>
+                                <ul class="card-org__list ">
+                                    <li class="card-org__list-item">
+                                        <span class="card-org__list-text">Черный металл</span>
+                                        <span class="card-org__list-numb">до 20 руб./кг</span>
+                                    </li>
+                                    <li class="card-org__list-item">
+                                        <span class="card-org__list-text">Медь</span>
+                                        <span class="card-org__list-numb">до 570 руб./кг</span>
+                                    </li>
+                                    <li class="card-org__list-item">
+                                        <span class="card-org__list-text">Алюминий</span>
+                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                    </li>
+
+                                    <li class="card-org__list-item">
+                                        <span class="card-org__list-text">Алюминий</span>
+                                        <span class="card-org__list-numb">до 560 руб./кг</span>
+                                    </li>
+                                </ul>
+                                <button class="card-org__list-link" hidden>
+                                    <span>Больше металлов</span>
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_blue"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="card-org__links">
+                                <div class="card-org__links-title">Услуги демонтажа</div>
+                                <div class="card-org__links-row js-card-org-links">
+                                    <a href="#" class="card-org__link">Металлические каркасы, конструкции</a>
+                                    <a href="#" class="card-org__link">Лифты</a>
+                                    <a href="#" class="card-org__link">Котельные</a>
+                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                    <a href="#" class="card-org__link">Здания, дома</a>
+                                    <button class="card-org__link js-links-more" hidden>...</button>
+                                </div>
+                            </div>
+                            <button class="btn btn_empty card-org__col-btn js-card-org-share" data-link="https://www.w3schools.com" data-tooltip="Скопировать ссылку">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#share_android"></use>
+                                </svg>
+                                <span>Поделиться</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__title">Часто задаваемые вопросы</div>
+                    <div class="accordion__wrap">
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-head">
+                                <div class="accordion__head-title">Сколько я получу за 1 тонну металлолома после демонтажа?</div>
+                                <span class="accordion__icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et itaque sint obcaecati ab tempora non,
+                                ex corporis hic sed suscipit cupiditate ducimus illum esse distinctio! Error, iure? Esse, expedita cum.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-head">
+                                <div class="accordion__head-title">Вы готовы решить вопрос с мусором после демонтажа?</div>
+                                <span class="accordion__icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et itaque sint obcaecati ab tempora non,
+                                ex corporis hic sed suscipit cupiditate ducimus illum esse distinctio! Error, iure? Esse, expedita cum.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-head">
+                                <div class="accordion__head-title">Вы принимаете только металлолом?</div>
+                                <span class="accordion__icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et itaque sint obcaecati ab tempora non,
+                                ex corporis hic sed suscipit cupiditate ducimus illum esse distinctio! Error, iure? Esse, expedita cum.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__head js-accordion-head">
+                                <div class="accordion__head-title">Вы демонтируете только металл или здания тоже?</div>
+                                <span class="accordion__icon">
+                                    <svg>
+                                        <use xlink:href="./img/sprites/sprite.svg#arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="accordion__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et itaque sint obcaecati ab tempora non,
+                                ex corporis hic sed suscipit cupiditate ducimus illum esse distinctio! Error, iure? Esse, expedita cum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

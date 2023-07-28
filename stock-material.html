@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+
+    <main class="main">
+        <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#">Scraptraffic</a>
+                </li>
+                <li class="breadcrumbs__item" aria-current="page">Склад</li>
+            </ul>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Категории металлолома и утильсырья</h1>
+                <p class="section__text">
+                    Выберите город, где хотите сдать металлолом и вторсырье
+                </p>
+                <div class="content-table  content-table_second">
+                    <div class="content-table__tab js-content-table-tab">
+                        <button data-type="metal" data-text="Металлы, стали и сплавы" class="content-table__tab-link content-table__tab-link_active btn">Металлы, стали и сплавы</button>
+                        <button data-type="semimetals" data-text="Полуметаллы, неметалл и их соединения" class="content-table__tab-link btn">Полуметаллы, неметалл и их соединения</button>
+                        <button data-type="catalysts" data-text="Катализаторы" class="content-table__tab-link btn">Катализаторы</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="radio-components" data-text="Радиодетали" class="content-table__tab-link btn">Радиодетали</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn content-table__tab-link_hide" data-hidden="true">Аккумуляторы</button>
+                        <button data-type="batteries" data-text="Аккумуляторы" class="content-table__tab-link btn content-table__tab-link_hide" data-hidden="true">Аккумуляторы</button>
+                        <button data-text="..." class="btn content-table__tab-link js-content-table-tab-more content-table__tab-link_show" style="">...</button>
+                    </div>
+                    <div class="content-table__block">
+                        <ul class="content-table__list content-table__list_active">
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Черный металл</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Сурьма</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Сера</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Медь</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Фосфор</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Нержавеющие стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Быстрорежущие стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Жаропрочные сплавы</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Прецизионные сплавы</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Легированные стали</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Цинк</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Латунь</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Бронза</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гафний</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Галлий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гольмий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Диспрозий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Европий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Золото</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Золото</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Галлий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                            <li class="content-table__item">
+                                <a href="#" class="content-table__link">
+                                    <span class="content-table__text">Гольмий</span>
+                                    <span class="content-table__numb">11 000 р/кг</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
