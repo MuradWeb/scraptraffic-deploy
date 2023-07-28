@@ -2609,7 +2609,7 @@ img {
 .cards__tab-btn {
   color: #404040;
   border-color: #30B4FF;
-  transition: all 0.3s linear;
+  transition: color 0.3s linear, background-color 0.3s linear;
 }
 
 .cards__tab-btn:not(:last-child) {
