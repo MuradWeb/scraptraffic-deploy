@@ -75,6 +75,10 @@
   .if-works {
     padding: 24px 0
   }
+  .if-works__header {
+    padding: 0 20px;
+    margin-bottom: 24px
+  }
   .if-works__cards-item {
     width: calc(50% - 24px)
   }
@@ -86,12 +90,6 @@
   }
   .if-works__cards-img {
     max-height: 200px
-  }
-}
-@media (max-width:768px) {
-  .if-works__header {
-    padding: 0 20px;
-    margin-bottom: 24px
   }
 }
 @media (max-width:500px) {

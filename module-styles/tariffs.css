@@ -158,6 +158,9 @@
   .tariffs {
     padding: 24px 0
   }
+  .tariffs__head {
+    margin-bottom: 24px
+  }
 }
 @media (max-width:991px) {
   .tariffs__flex {
@@ -201,9 +204,6 @@
   }
 }
 @media (max-width:768px) {
-  .tariffs__head {
-    margin-bottom: 24px
-  }
   .tariffs__block {
     padding: 15px;
     border-radius: 7px

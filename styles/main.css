@@ -4989,10 +4989,33 @@ img {
 .payment__item {
   width: calc(33.33333% - 24px);
   margin: 24px 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.payment__item:nth-child(1) {
+  justify-content: space-between;
+}
+
+.payment__item:not(:nth-child(1)) img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
 }
 
 .payment__item img {
   width: 100%;
+}
+
+.payment__item span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #404040;
 }
 
 .tariffs {
@@ -5754,6 +5777,15 @@ img {
     font-size: 32px;
   }
 
+  .payment__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .payment__item {
+    width: calc(50% - 24px);
+  }
+
   .tariffs__content-title {
     font-size: 32px;
   }
@@ -6089,6 +6121,10 @@ img {
     padding: 24px 0;
   }
 
+  .benefits__header {
+    margin-bottom: 24px;
+  }
+
   .benefits__cards {
     margin: -60px -12px 0;
     max-width: initial;
@@ -6098,8 +6134,12 @@ img {
     padding: 24px 0;
   }
 
+  .offer__header {
+    margin-bottom: 24px;
+  }
+
   .offer__img {
-    display: none;
+    width: 100%;
   }
 
   .offer__content {
@@ -6112,6 +6152,11 @@ img {
 
   .if-works {
     padding: 24px 0;
+  }
+
+  .if-works__header {
+    padding: 0 20px;
+    margin-bottom: 24px;
   }
 
   .if-works__cards-item {
@@ -6134,6 +6179,10 @@ img {
     padding: 24px 0;
   }
 
+  .possibilities__head {
+    margin-bottom: 24px;
+  }
+
   .rates {
     padding: 24px 0;
   }
@@ -6142,8 +6191,16 @@ img {
     padding: 24px 0 60px;
   }
 
+  .payment__header {
+    margin-bottom: 24px;
+  }
+
   .tariffs {
     padding: 24px 0;
+  }
+
+  .tariffs__head {
+    margin-bottom: 24px;
   }
 
   .modal_cards .modal__container {
@@ -6353,6 +6410,19 @@ img {
 
   .intro-block__item {
     width: calc(50% - 24px);
+  }
+
+  .offer__flex {
+    display: block;
+  }
+
+  .offer__img {
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  .offer__img img {
+    width: 100%;
   }
 
   .tariffs__flex {
@@ -6829,26 +6899,13 @@ img {
     border-radius: 7px;
   }
 
-  .benefits__header {
-    margin-bottom: 24px;
-  }
-
   .offer__block {
     padding: 15px 15px 40px;
     border-radius: 7px;
   }
 
-  .offer__header {
-    margin-bottom: 24px;
-  }
-
   .offer__title {
     font-size: 26px;
-  }
-
-  .if-works__header {
-    padding: 0 20px;
-    margin-bottom: 24px;
   }
 
   .possibilities__block {
@@ -6858,10 +6915,6 @@ img {
   .possibilities__bg img {
     border-radius: 7px;
     object-position: 60%;
-  }
-
-  .possibilities__head {
-    margin-bottom: 24px;
   }
 
   .possibilities__content-title {
@@ -6889,10 +6942,6 @@ img {
     margin-bottom: 32px;
   }
 
-  .payment__header {
-    margin-bottom: 24px;
-  }
-
   .payment__block {
     padding: 15px;
     border-radius: 7px;
@@ -6906,10 +6955,6 @@ img {
   .payment__item {
     width: 100%;
     margin: 12px 0 0;
-  }
-
-  .tariffs__head {
-    margin-bottom: 24px;
   }
 
   .tariffs__block {

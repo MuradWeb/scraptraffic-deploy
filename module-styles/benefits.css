@@ -52,6 +52,9 @@
   .benefits {
     padding: 24px 0
   }
+  .benefits__header {
+    margin-bottom: 24px
+  }
   .benefits__cards {
     margin: -60px -12px 0;
     max-width: initial
@@ -61,9 +64,6 @@
   .benefits__block {
     padding: 15px 15px 40px;
     border-radius: 7px
-  }
-  .benefits__header {
-    margin-bottom: 24px
   }
 }
 @media (max-width:500px) {

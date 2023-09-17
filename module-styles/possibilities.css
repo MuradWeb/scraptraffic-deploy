@@ -64,6 +64,9 @@
   .possibilities {
     padding: 24px 0
   }
+  .possibilities__head {
+    margin-bottom: 24px
+  }
 }
 @media (max-width:768px) {
   .possibilities__block {
@@ -73,9 +76,6 @@
     border-radius: 7px;
     -o-object-position: 60%;
     object-position: 60%
-  }
-  .possibilities__head {
-    margin-bottom: 24px
   }
   .possibilities__content-title {
     font-size: 26px
