@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrap">
+                    <div class="hero__bg">
+                        <picture>
+                            <img src="./img/content/intro-bg.jpg" alt="" width="1320" height="567">
+                        </picture>
+                    </div>
+
+                    <div class="hero__content">
+                        <div class="hero__logo">
+                            <img src="./img/content/logo-1.svg" alt="" width="176" height="52">
+                        </div>
+
+                        <h1 class="hero__title">
+                            Присоединяйтесь к нашей <br> системе и повышайте доход
+                        </h1>
+                        <p class="hero__text">
+                            Предлагаем аренду страниц для получения заявок на приём лома через нашу <br>
+                            партнёрскую сеть. Заявки поступают через страницы на сайте <br>
+                            и распределительный центр, обеспечивая надёжный источник клиентов.
+                        </p>
+
+                        <div class="hero__btn">
+                            <a href="" class="btn btn_empty">Присоединиться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stake">
+            <div class="container">
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/1.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Я — менеджер закупочной компании</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-1.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/2.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Компания по приему вторичного сырья</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-2.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/3.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Компания по приему металлолома</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-3.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/4.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Я — владелец компании</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-4.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/5.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Я — частное лицо</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-5.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stake__row">
+                    <div class="stake__item">
+                        <div class="stake__item-icon">
+                            <picture>
+                                <img src="./img/content/stake/6.png" alt="" loading="lazy" width="40" height="40">
+                            </picture>
+                        </div>
+                        <span>Я — сотрудник компании</span>
+
+                        <div class="stake__item-arrow">
+                            <picture>
+                                <img src="./img/content/stake/arrow-6.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="stake__title">
+                    Примите участие в нашей <br> системе и <span>начните <br> зарабатывать уже сегодня!</span>
+                </h2>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__block">
+                    <div class="benefits__header">
+                        <h2 class="benefits__title">Наши преимущества</h2>
+                        <div class="benefits__count">01/06</div>
+                    </div>
+
+
+                    <div class="benefits__cards">
+                        <div class="benefits__cards-item">
+                            <div class="benefits__cards-icon">
+                                <img src="./img/content/benefits/icon-1.svg" alt="" width="24" height="24" loading="lazy">
+                            </div>
+
+                            <h3 class="benefits__cards-title">Обширная аудитория</h3>
+                            <p class="benefits__cards-text">
+                                Для компаний по утилизации отходов, приёму металлолома, пластика и многих других материалов.
+                            </p>
+                        </div>
+
+                        <div class="benefits__cards-item">
+                            <div class="benefits__cards-icon">
+                                <img src="./img/content/benefits/icon-2.svg" alt="" width="24" height="24" loading="lazy">
+                            </div>
+
+                            <h3 class="benefits__cards-title">Статистика и сравнение</h3>
+                            <p class="benefits__cards-text">
+                                Изучите статистику и сравните тарифы, чтобы сделать выгодный выбор.
+                            </p>
+                        </div>
+
+                        <div class="benefits__cards-item">
+                            <div class="benefits__cards-icon">
+                                <img src="./img/content/benefits/icon-3.svg" alt="" width="24" height="24" loading="lazy">
+                            </div>
+
+                            <h3 class="benefits__cards-title">Повышайте эффективность</h3>
+                            <p class="benefits__cards-text">
+                                Рекламируйте свои услуги в городах, которые вас интересуют, и считайте стоимость аренды страницы.
+                            </p>
+                        </div>
+
+                        <div class="benefits__cards-item">
+                            <div class="benefits__cards-icon">
+                                <img src="./img/content/benefits/icon-4.svg" alt="" width="24" height="24" loading="lazy">
+                            </div>
+
+                            <h3 class="benefits__cards-title">Партнёрство с нами</h3>
+                            <p class="benefits__cards-text">
+                                Подключайтесь к ScrapTraffic и сотрудничайте с нами для увеличения вашей клиентской базы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer__block">
+                    <div class="offer__header">
+                        <h2 class="offer__header-title">Что мы предлагаем </h2>
+                        <div class="offer__count">02/06</div>
+                    </div>
+
+                    <div class="offer__flex">
+                        <div class="offer__content">
+                            <h3 class="offer__title">
+                                Разместим ваш телефон на странице, посвящённой приёму интересующего вас вторсырья
+                            </h3>
+                            <p class="offer__text">
+                                Страница уже занимает высокие позиции в поисковых системах, и вам не придётся
+                                создавать сайт, инвестировать в его развитие и продвижение.
+                            </p>
+
+                            <a href="#" class="btn btn_white offer__bnt">Присоединиться</a>
+                        </div>
+
+                        <div class="offer__img">
+                            <picture>
+                                <img src="./img/content/fragment.png" alt="" width="487" height="" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="if-works">
+            <div class="container">
+                <div class="if-works__header">
+                    <h2 class="if-works__title">Как это работает</h2>
+                    <div class="if-works__count">03/06</div>
+                </div>
+
+                <div class="if-works__cards">
+                    <div class="if-works__cards-item">
+                        <div class="if-works__cards-num">01</div>
+                        <h3 class="if-works__cards-title">Выбор материала и города</h3>
+                        <p class="if-works__cards-text">Выберите материал и город, где хотите привлечь клиентов.</p>
+                    </div>
+                    <div class="if-works__cards-item">
+                        <div class="if-works__cards-num">02</div>
+                        <h3 class="if-works__cards-title">Аренда страницы</h3>
+                        <p class="if-works__cards-text">Арендуйте страницу для выбранного материала и города.</p>
+                    </div>
+                    <div class="if-works__cards-item">
+                        <div class="if-works__cards-num">03</div>
+                        <h3 class="if-works__cards-title">Привлечение клиентов</h3>
+                        <p class="if-works__cards-text">Наша оптимизированная страница будет активно привлекать клиентов. Вы получите заявки через контакты на странице и по электронной почте.</p>
+                    </div>
+                    <div class="if-works__cards-item">
+                        <div class="if-works__cards-num">04</div>
+                        <h3 class="if-works__cards-title">Успешное сотрудничество</h3>
+                        <p class="if-works__cards-text">
+                            Ваша уникальная возможность привлечь клиентов с помощью арендованной страницы приведёт к успешному сотрудничеству.
+                        </p>
+                    </div>
+                    <div class="if-works__cards-item">
+                        <div class="if-works__cards-img">
+                            <picture>
+                                <img src="./img/content/decor.png" alt="" width="424" height="250" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="possibilities">
+            <div class="container">
+                <div class="possibilities__block">
+                    <div class="possibilities__bg">
+                        <picture>
+                            <img src="./img/content/possible-bg.png" alt="" width="1320" height="474" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="possibilities__head">
+                        <h2 class="possibilities__title">Возможности</h2>
+                        <div class="possibilities__count">04/06</div>
+                    </div>
+
+                    <div class="possibilities__content">
+                        <h3 class="possibilities__content-title">
+                            Подключаясь к системе ScrapTraffic, помимо звонков с 
+                            арендованной страницы, вы можете получать заявки от нашего диспетчера
+                        </h3>
+                        <p class="possibilities__text">
+                            Как это работает — если мы получаем запрос на приём интересующего вас материала
+                            в вашем регионе, мы можем передать вам контакт поставщика.
+                        </p>
+
+                        <a href="" class="btn btn_empty possibilities__btn">
+                            Присоединиться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tariffs">
+            <div class="container">
+                <div class="tariffs__block">
+                    <div class="tariffs__head">
+                        <h2 class="tariffs__title">О наших тарифах</h2>
+                        <div class="tariffs__count">05/06</div>
+                    </div>
+
+                    <div class="tariffs__flex">
+                        <div class="tariffs__content">
+                            <h3 class="tariffs__content-title">
+                                Мы разделили наши тарифы на два основных плана.
+                                <span>
+                                    У каждого тарифного плана есть своя логика, плюсы и минусы.
+                                </span>
+                            </h3>
+
+                            <p class="tariffs__content-text">
+                                Приглашаем вас ознакомиться с нашими тарифами более подробно.
+                                Мы предоставляем тарифный калькулятор для сравнения стоимости каждого плана. <br><br>
+                                Выбрав тариф, имейте в виду, что статистика может изменяться, что может повлиять на ваши расходы.
+                                Тариф можно менять в любое время, и мы пересчитаем сумму аванса, предоставляя вам уведомления
+                                и помогая отслеживать статистику.
+                            </p>
+                        </div>
+
+                        <div class="tariffs__info">
+                            <div class="tariffs__info-head">
+                                <svg>
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-info"></use>
+                                </svg>
+                                <span>Важно помнить:</span>
+                            </div>
+
+                            <p class="tariffs__info-text">
+                                Количество посещений страницы не всегда соответствует
+                                количеству звонков, и не каждый звонок приводит к сделке. <br><br>
+                                Наша задача — привлечь трафик, но успех сделок зависит
+                                от взаимодействия продавцов и покупателей.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="tariffs__flex">
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">Тариф «Статический»</h3>
+
+                            <div class="tariffs__card-subtitle">Преимущества:</div>
+
+                            <ul class="tariffs__card-list">
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Стабильное планирование рекламного бюджета на месяц или более длительный период.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Оплата авансом за несколько месяцев с бонусной скидкой до 25% от общей суммы.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Фиксированная стоимость не меняется на весь выбранный период.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Эксклюзивные возможности только для этого тарифа:
+                                    </div>
+
+                                    <ul class="tariffs__card-sublist">
+                                        <li>
+                                            — Оплата за <span>90 дней</span> с бонусом +15% к сумме оплаты.
+                                        </li>
+                                        <li>
+                                            — Оплата за <span>180 дней</span> с бонусом +20% к сумме оплаты.
+                                        </li>
+                                        <li>
+                                            — Оплата за <span>360 дней</span> с бонусом +25% к сумме оплаты.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <a href="" class="btn btn_empty tariffs__card-link">
+                                Подключить сейчас
+                            </a>
+
+                            <p class="tariffs__card-text">
+                                Выбирая тариф «Статический», вы получаете уникальные преимущества,
+                                а также возможность оплачивать период с выгодными бонусами.
+                            </p>
+                        </div>
+
+                        <div class="tariffs__card">
+                            <h3 class="tariffs__card-title">Тариф «Динамический»</h3>
+
+                            <div class="tariffs__card-subtitle">Преимущества:</div>
+
+                            <ul class="tariffs__card-list">
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Персональная регулировка бюджета в зависимости от реальных посещений.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Бонусная скидка <b> до 7%</b> от суммы аванса, но не от планируемого срока.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Оплачивайте за фактические посещения — никаких переплат.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Возможность сохранения аванса на счёте и его списание только за реальные посещения.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        Уведомления об остатке средств и возможных изменениях статистики.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tariffs__card-item">
+                                        <svg>
+                                            <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        При выборе тарифа «Динамический», вы можете оптимизировать расходы в 
+                                        зависимости от актуальных посещений, а также получить бонусы от суммы аванса:
+                                    </div>
+
+                                    <ul class="tariffs__card-sublist">
+                                        <li>
+                                            — Аванс <span>свыше 50 000 рублей</span>  — бонус +7%.
+                                        </li>
+                                        <li>
+                                            — Аванс <span>свыше 40 000 рублей</span>  — бонус +5%.
+                                        </li>
+                                        <li>
+                                            — Аванс <span>свыше 30 000 рублей</span>  — бонус +3%.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <a href="" class="btn btn_empty tariffs__card-link">
+                                Подключить сейчас
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rates">
+            <div class="container">
+                <div class="rates__block">
+                    <div class="rates__bg">
+                        <picture>
+                            <img src="./img/content/rates-bg.png" alt="" loading="lazy" width="1320" height="308">
+                        </picture>
+                    </div>
+
+                    <div class="rates__content">
+                        <div class="rates__content-mx">
+                            <h2 class="rates__title">
+                                Сравните наши тарифы и выберите наилучший вариант для себя
+                            </h2>
+                            <p class="rates__text">
+                                Используйте наш тарифный калькулятор, чтобы оценить стоимость каждого тарифа индивидуально
+                            </p>
+
+                            <a href="" class="btn btn_white rates__bnt">Рассчитать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment">
+            <div class="container">
+                <div class="payment__block">
+                    <div class="payment__header">
+                        <h2 class="payment__title">Оплата</h2>
+                        <div class="payment__count">06/06</div>
+                    </div>
+
+                    <div class="payment__cards">
+                        <div class="payment__item">
+                            <picture>
+                                <img src="./img/content/payment/p1.png" alt="" width="385" height="83" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="payment__item">
+                            <picture>
+                                <img src="./img/content/payment/p2.png" alt="" width="385" height="83" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="payment__item">
+                            <picture>
+                                <img src="./img/content/payment/p3.png" alt="" width="385" height="83" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&"></script>
+
+
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<div class="modal modal_telegram" id="telegram-modal">
+    <div class="modal__container">
+        <button data-fancybox-close="" class="f-button f-button_custom is-close-btn" title="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1">
+                <path d="M20 20L4 4m16 0L4 20" />
+            </svg>
+        </button>
+
+        <div class="modal__wrap">
+            <div class="modal__img">
+                <picture>
+                    <img src="./img/content/tg-modal.png" alt="" loading="lazy" width="248px" height="328px">
+                </picture>
+            </div>
+            <div class="modal__content">
+                <div class="modal__top">
+                    <div class="modal__top-title">Подписывайтесь на наши Telegram-каналы</div>
+                    <p class="modal__text">
+                        Присоединяйтесь к основному Telegram-чату, общайтесь, делитесь опытом
+                        и получайте полезные советы от участников сообщества.
+                    </p>
+                    <a href="#" class="modal__btn btn" target="_blank">
+                        <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#tg-icon"></use>
+                        </svg>
+                        <span>Общий чат</span>
+                    </a>
+                </div>
+                <div class="modal__bottom">
+                    <div class="modal__bottom-title">Специализированные Telegram-чаты:</div>
+                    <div class="modal__links">
+                        <a href="" class="btn btn_empty modal__link">Базовые металлы</a>
+                        <a href="" class="btn btn_empty modal__link">Редкие материалы</a>
+                        <a href="" class="btn btn_empty modal__link">Редкоземельные</a>
+                        <a href="" class="btn btn_empty modal__link">Новая энергия</a>
+                        <a href="" class="btn btn_empty modal__link">Драгоценные металлы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

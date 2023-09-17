@@ -1,0 +1,214 @@
+.tariffs {
+  padding: 60px 0
+}
+.tariffs__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px
+}
+.tariffs__count,
+.tariffs__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #868686
+}
+.tariffs__block {
+  border-radius: 15px;
+  background: #f8f8f8;
+  padding: 30px
+}
+.tariffs__flex {
+  display: flex;
+  margin: 0 -12px
+}
+.tariffs__flex:nth-of-type(2) {
+  margin-bottom: 60px;
+  align-items: flex-start
+}
+.tariffs__content {
+  width: calc(50% - 24px);
+  margin: 0 12px
+}
+.tariffs__content-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: .8px;
+  color: #404040;
+  margin-bottom: 16px
+}
+.tariffs__content-title span {
+  display: block;
+  color: #30b4ff
+}
+.tariffs__content-text,
+.tariffs__info-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%
+}
+.tariffs__info {
+  width: calc(50% - 24px);
+  border-radius: 15px;
+  border: 1px solid #e2e3e5;
+  margin: 0 12px;
+  padding: 30px
+}
+.tariffs__info-head {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #30b4ff;
+  margin-bottom: 20px
+}
+.tariffs__info-head svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px
+}
+.tariffs__card-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: transparent
+}
+.tariffs__card-text {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #868686
+}
+.tariffs__card {
+  padding: 30px;
+  border-radius: 15px;
+  margin: 0 12px;
+  width: calc(50% - 24px)
+}
+.tariffs__card:nth-child(1) {
+  background-color: #fff
+}
+.tariffs__card:nth-child(1) .tariffs__card-list {
+  margin-bottom: 70px
+}
+.tariffs__card:nth-child(2) {
+  background-color: #ecf7ff
+}
+.tariffs__card-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: .48px;
+  color: #30b4ff;
+  margin-bottom: 30px
+}
+.tariffs__card-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: .24px;
+  color: #bbb;
+  margin-bottom: 12px
+}
+.tariffs__card-list {
+  margin-bottom: 30px
+}
+.tariffs__card-list li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: .28px;
+  color: #404040
+}
+.tariffs__card-list li:not(:last-child) {
+  margin-bottom: 12px
+}
+.tariffs__card-item {
+  position: relative;
+  padding-left: 24px
+}
+.tariffs__card-item svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 16px;
+  width: 16px;
+  height: 16px
+}
+.tariffs__card-sublist {
+  margin-top: 8px;
+  padding-left: 24px
+}
+.tariffs__card-sublist li span {
+  color: #30b4ff;
+  font-weight: 600
+}
+.tariffs__card-sublist li:not(:last-child) {
+  margin-bottom: 8px
+}
+@media (max-width:1200px) {
+  .tariffs__content-title {
+    font-size: 32px
+  }
+}
+@media (max-width:1024px) {
+  .tariffs {
+    padding: 24px 0
+  }
+}
+@media (max-width:991px) {
+  .tariffs__flex {
+    display: block;
+    margin: 0
+  }
+  .tariffs__flex:nth-of-type(2) {
+    margin-bottom: 24px
+  }
+  .tariffs__content {
+    margin: 0 0 12px;
+    width: 100%
+  }
+  .tariffs__info {
+    width: 100%;
+    border-radius: 7px;
+    padding: 12px;
+    margin: 0
+  }
+  .tariffs__card-text {
+    margin-top: 15px
+  }
+  .tariffs__card {
+    width: 100%;
+    margin: 0;
+    border-radius: 7px;
+    padding: 15px
+  }
+  .tariffs__card:nth-child(1) {
+    margin-bottom: 12px
+  }
+  .tariffs__card:nth-child(1) .tariffs__card-list {
+    margin-bottom: 24px
+  }
+  .tariffs__card-title {
+    margin-bottom: 15px;
+    font-size: 18px
+  }
+  .tariffs__card-list {
+    margin-bottom: 24px
+  }
+}
+@media (max-width:768px) {
+  .tariffs__head {
+    margin-bottom: 24px
+  }
+  .tariffs__block {
+    padding: 15px;
+    border-radius: 7px
+  }
+  .tariffs__content-title {
+    font-size: 26px
+  }
+}

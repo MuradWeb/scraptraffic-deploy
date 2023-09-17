@@ -1,0 +1,64 @@
+.scrap-categories {
+  padding: 60px 0;
+  overflow: hidden
+}
+.scrap-categories h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 16px
+}
+.scrap-categories p {
+  color: #494949;
+  font-size: 16px;
+  line-height: 130%
+}
+.scrap-categories p:not(:last-of-type) {
+  margin-bottom: 24px
+}
+.scrap-categories__row {
+  display: flex;
+  margin: 0 -12px 16px
+}
+.scrap-categories__item {
+  position: relative;
+  width: 100%;
+  max-width: 160px;
+  margin: 0 12px
+}
+.scrap-categories__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.scrap-categories__icon svg {
+  width: 40px;
+  height: 40px
+}
+.scrap-categories__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px
+}
+.scrap-categories__name {
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: .24px;
+  color: #404040;
+  margin-top: 12px
+}
+@media (max-width:1024px) {
+  .scrap-categories {
+    padding: 30px 0
+  }
+}
+@media (max-width:550px) {
+  .scrap-categories__row {
+    flex-wrap: wrap;
+    margin: -20px -10px 16px
+  }
+  .scrap-categories__item {
+    margin: 20px 10px 0
+  }
+}
