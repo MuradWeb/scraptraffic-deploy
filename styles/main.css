@@ -1597,6 +1597,10 @@ img {
   margin-bottom: 50px;
 }
 
+.hero__logo img {
+  width: 176px;
+}
+
 .hero__title {
   font-size: 56px;
   font-weight: 700;
@@ -5810,6 +5814,10 @@ img {
 
   .hero__content {
     padding: 50px 15px;
+  }
+
+  .hero__logo img {
+    width: 200px;
   }
 
   .hero__logo {

@@ -25,6 +25,9 @@
 .hero__logo {
   margin-bottom: 50px
 }
+.hero__logo img {
+  width: 176px
+}
 .hero__title {
   font-size: 56px;
   font-weight: 700;
@@ -48,6 +51,9 @@
 @media (max-width:1024px) {
   .hero__content {
     padding: 50px 15px
+  }
+  .hero__logo img {
+    width: 200px
   }
   .hero__logo {
     margin-bottom: 24px
