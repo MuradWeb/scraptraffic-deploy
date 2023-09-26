@@ -5,7 +5,13 @@
   padding-top: 50px
 }
 .auth__logo {
+  display: flex;
+  align-items: center;
   margin-left: 24px
+}
+.auth__logo img:first-child {
+  margin-top: -5px;
+  margin-right: 15px
 }
 .auth__back {
   display: flex;
@@ -186,6 +192,7 @@
     width: 100%
   }
   .auth__logo img {
+    flex: auto;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover
@@ -228,5 +235,13 @@
   }
   .auth__support-item:last-child .auth__support-tel {
     text-align: left
+  }
+}
+@media (max-width:360px) {
+  .auth__logo img:first-child {
+    width: 130px
+  }
+  .auth__logo img:last-child {
+    width: 130px
   }
 }
