@@ -254,3 +254,9 @@ template {
     max-width: 1320px
   }
 }
+@media (max-width:500px) {
+  .main_auth {
+    background-position: 0 0;
+    background-image: url(../img/content/auth-bgm.png)
+  }
+}
