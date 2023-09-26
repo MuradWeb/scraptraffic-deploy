@@ -7359,6 +7359,12 @@ img {
   .auth__logo {
     margin-left: 0;
     margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .auth__logo img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .auth__block {

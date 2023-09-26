@@ -182,7 +182,13 @@
   }
   .auth__logo {
     margin-left: 0;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    width: 100%
+  }
+  .auth__logo img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
   }
   .auth__block {
     margin-top: 30px;
