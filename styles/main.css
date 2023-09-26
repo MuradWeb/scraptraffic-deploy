@@ -486,10 +486,10 @@ img {
   background-image: url(../img/content/auth-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 0;
+  background-attachment: fixed;
+  padding-bottom: 60px;
   min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 .btn {
@@ -550,7 +550,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: -15px 0 30px;
+  margin-bottom: 30px;
 }
 
 .form__link {
@@ -564,7 +564,7 @@ img {
 
 .label {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .label__text {
@@ -7331,7 +7331,7 @@ img {
 
 @media (max-width: 600px) {
   .form__remember {
-    margin: 0 0 15px;
+    margin-bottom: 15px;
   }
 
   .label {
@@ -7498,7 +7498,6 @@ img {
 
 @media (max-width: 500px) {
   .main_auth {
-    background-position: 0 0;
     background-image: url(../img/content/auth-bgm.png);
   }
 

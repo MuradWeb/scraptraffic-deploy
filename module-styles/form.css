@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: -15px 0 30px
+  margin-bottom: 30px
 }
 .form__link {
   margin-left: 24px;
@@ -17,7 +17,7 @@
 }
 .label {
   display: block;
-  margin-bottom: 30px
+  margin-bottom: 20px
 }
 .label__text {
   color: #404040;
@@ -94,9 +94,7 @@
   color: #404040
 }
 @media (max-width:600px) {
-  .form__remember {
-    margin: 0 0 15px
-  }
+  .form__remember,
   .label {
     margin-bottom: 15px
   }

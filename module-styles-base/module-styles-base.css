@@ -92,10 +92,10 @@ textarea {
   background-image: url(../img/content/auth-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden
+  background-position: 0 0;
+  background-attachment: fixed;
+  padding-bottom: 60px;
+  min-height: 100vh
 }
 details,
 main {
@@ -256,7 +256,6 @@ template {
 }
 @media (max-width:500px) {
   .main_auth {
-    background-position: 0 0;
     background-image: url(../img/content/auth-bgm.png)
   }
 }

@@ -34,32 +34,6 @@ $(function () {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/auth/auth.js":
-/*!*****************************************!*\
-  !*** ./src/blocks/modules/auth/auth.js ***!
-  \*****************************************/
-/***/ (() => {
-
-$(function () {
-  var $formBlock = $('.js-form-block');
-  var $authBlock = $('.js-auth');
-  var $window = $(window);
-  function init() {
-    var formHeight = $formBlock.height();
-    var authHeight = $authBlock.innerHeight();
-    var windowHeight = $window.height();
-    if (windowHeight < authHeight) {
-      $formBlock.find('.auth__block-inner').height(formHeight - (authHeight - windowHeight) - 60);
-    } else {
-      $formBlock.find('.auth__block-inner').removeAttr('style');
-    }
-  }
-  init();
-  $window.on('resize', init);
-});
-
-/***/ }),
-
 /***/ "./src/blocks/modules/card-org/card-org.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/card-org/card-org.js ***!
@@ -784,8 +758,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_modal__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
 /* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _modules_auth_auth__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/auth/auth */ "./src/blocks/modules/auth/auth.js");
-/* harmony import */ var _modules_auth_auth__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_auth_auth__WEBPACK_IMPORTED_MODULE_15__);
 // import "%modules%/header/header";
 // import "%modules%/footer/footer";
 
@@ -804,7 +776,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import "%modules%/auth/auth";
 
 /***/ })
 
