@@ -1,0 +1,226 @@
+.auth__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px
+}
+.auth__logo {
+  margin-left: 24px
+}
+.auth__back {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 12px 10px;
+  border-radius: 8px;
+  background-color: #fff
+}
+.auth__back svg {
+  width: 18px;
+  height: 18px;
+  transform: rotateY(180deg);
+  margin-right: 4px
+}
+.auth__back span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  color: #30b4ff
+}
+.auth__body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 70px
+}
+.auth__block {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 540px;
+  margin: 70px auto 0
+}
+.auth__block-inner {
+  overflow-x: auto;
+  padding: 40px 60px
+}
+.auth__block-inner::-webkit-scrollbar {
+  width: 2px
+}
+.auth__block-inner::-webkit-scrollbar-track {
+  background: #f1f1f1
+}
+.auth__block-inner::-webkit-scrollbar-thumb {
+  background: #888
+}
+.auth__block-inner::-webkit-scrollbar-thumb:hover {
+  background: #555
+}
+.auth__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: .48px;
+  color: #30b4ff;
+  margin-bottom: 20px
+}
+.auth__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 30px;
+  text-align: center
+}
+.auth__switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border-bottom: 1px solid #e2e3e5
+}
+.auth__switcher span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #bbb
+}
+.auth__switcher-text {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #bbb
+}
+.auth__switcher-text a {
+  color: #404040
+}
+.auth__switcher-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: .28px;
+  margin-left: 8px;
+  transition: color .3s linear
+}
+.auth__switcher-link:hover:not(:active) {
+  color: #1b9ae3
+}
+.auth__social {
+  display: flex;
+  align-items: center;
+  margin-top: 20px
+}
+.auth__social-link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: .24px;
+  color: #404040;
+  flex: auto;
+  padding: 12px;
+  border: 1px solid #e2e3e5;
+  border-radius: 8px
+}
+.auth__social-link:not(:last-child) {
+  margin-right: 8px
+}
+.auth__social-link svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px
+}
+.auth__support {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px
+}
+.auth__support-item {
+  display: flex
+}
+.auth__support-item:last-child .auth__support-tel {
+  display: block;
+  text-align: right
+}
+.auth__support-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: .24px;
+  display: flex;
+  align-items: center;
+  color: #bbb;
+  margin-bottom: 8px
+}
+.auth__support-label svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  margin-bottom: -4px
+}
+.auth__support-icon {
+  margin-right: 10px
+}
+.auth__support-icon svg {
+  width: 42px;
+  height: 42px
+}
+.auth__support-tel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: .28px;
+  color: #404040
+}
+@media (max-width:600px) {
+  .auth__head {
+    padding-top: 40px;
+    flex-direction: column-reverse;
+    align-items: flex-start
+  }
+  .auth__logo {
+    margin-left: 0;
+    margin-bottom: 40px
+  }
+  .auth__block {
+    margin-top: 30px;
+    padding: 10px
+  }
+  .auth__block-inner {
+    padding: 10px
+  }
+  .auth__title {
+    font-size: 20px
+  }
+  .auth__text {
+    font-size: 14px;
+    margin-bottom: 24px
+  }
+  .auth__switcher {
+    padding: 24px 0
+  }
+  .auth__support {
+    margin-top: 24px;
+    display: block
+  }
+  .auth__support-item:last-child {
+    margin-top: 30px
+  }
+}
+@media (max-width:500px) {
+  .auth__social {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: -10px -5px 0
+  }
+  .auth__social-link {
+    flex: initial;
+    width: calc(50% - 10px);
+    margin: 10px 5px 0!important
+  }
+  .auth__support-item:last-child .auth__support-tel {
+    text-align: left
+  }
+}

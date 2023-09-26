@@ -88,6 +88,15 @@ textarea {
 .text:not(:last-child) {
   margin-bottom: 24px
 }
+.main_auth {
+  background-image: url(../img/content/auth-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden
+}
 details,
 main {
   display: block
